@@ -108,7 +108,7 @@
 	}
 
 	nav {
-		background: #444444;
+		background: #B38268;
 		border-bottom: 1px solid #ddd;
 		box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 		padding: 0.5em;
@@ -146,12 +146,12 @@
 		cursor: pointer;
 	}
 
-	nav ul li button#home {
-		color: #EF8E44;
-	}
-
 	nav ul li button:hover {
 		color: #68BDE1;
+	}
+
+	nav ul li button#home {
+		color: #EF8E44;
 	}
 
 	.sticky {

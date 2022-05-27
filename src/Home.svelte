@@ -31,7 +31,7 @@
 }
 
 :root {
-  --secondary-color: #444444;
+  --secondary-color: #fff4ee;
   --contrast-color: #68BDE1;
 }
 .overlay {
@@ -50,7 +50,7 @@
   height: 100vh;
   justify-content: space-around;
   align-items: center;
-  color: #fff;
+  color: #EF8E44;
   animation: expand .8s ease forwards;
   background-color: var(--secondary-color);
   position: relative;
