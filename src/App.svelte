@@ -14,13 +14,13 @@
 	// Your web app's Firebase configuration
 	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 	const firebaseConfig = {
-	apiKey: "AIzaSyDET893Ktp7yVTng8YLtMfiEGYTJmC5bkQ",
-	authDomain: "weme-application.firebaseapp.com",
-	projectId: "weme-application",
-	storageBucket: "weme-application.appspot.com",
-	messagingSenderId: "612017618545",
-	appId: "1:612017618545:web:cbdb0720480239a9fc25d0",
-	measurementId: "G-4YK2KKYY8G"
+		apiKey: "AIzaSyDET893Ktp7yVTng8YLtMfiEGYTJmC5bkQ",
+		authDomain: "weme-application.firebaseapp.com",
+		projectId: "weme-application",
+		storageBucket: "weme-application.appspot.com",
+		messagingSenderId: "612017618545",
+		appId: "1:612017618545:web:cbdb0720480239a9fc25d0",
+		measurementId: "G-4YK2KKYY8G",
 	};
 
 	// Initialize Firebase
@@ -56,8 +56,6 @@
 		//set mode
 		mode = page;
 	}
-
-
 </script>
 
 <main>
@@ -66,7 +64,7 @@
 		<nav>
 			<ul>
 				<li>
-					<img src="img/Logo.png" alt="logo" width="100"/>
+					<img src="img/Logo.png" alt="logo" width="100" />
 				</li>
 				<li>
 					<button id="home" on:click={() => setTo("home")}>หน้าหลัก</button>
@@ -95,25 +93,22 @@
 	{:else if mode == "donate"}
 		<Donate />
 	{/if}
-
 </main>
 
 <style>
-
+	@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Righteous&display=swap');
 	:global(body) {
 		margin: 0;
 		padding: 0;
-		font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-			Helvetica, sans-serif;
+		font-family: 'Mitr', sans-serif;
 	}
 
 	nav {
-		background: #B38268;
+		background: #b38268;
 		border-bottom: 1px solid #ddd;
 		box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 		padding: 0.5em;
 		padding-left: 1em;
-
 	}
 
 	nav ul {
@@ -147,17 +142,16 @@
 	}
 
 	nav ul li button:hover {
-		color: #68BDE1;
+		color: #68bde1;
 	}
 
 	nav ul li button#home {
-		color: #EF8E44;
+		color: #ef8e44;
 	}
 
 	.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
+		position: sticky;
+		top: 0;
+		z-index: 100;
+	}
 </style>
