@@ -16,7 +16,6 @@
             alert("There was an error :(")
             }
         });
-    
 }
 </script>
 </head>
@@ -37,7 +36,7 @@
       <textarea type="text" id="etc" name="สิ่งที่อยากจะบอกเรา" placeholder="สิ่งที่อยากจะบอกเรา"/>
     </div>
   </form>
-  <button on:click={() => SubForm()}>Submit</button>
+  <button onclick="SubForm()">Submit</button>
     </div>
 </body>
 

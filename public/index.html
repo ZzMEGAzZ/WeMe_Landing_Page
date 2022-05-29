@@ -19,11 +19,29 @@
 	<meta content='WeMe,weme,WEME,Friend,activity,activities,sport' prooerty='og:keywords' />
 	<meta content='WeMe,weme,WEME,Friend,activity,activities,sport' name='keywords' />
 
-	<title>WeMe</title>
+	<title>WeMe | แอปพลิเคชันหาเพื่อนทำกิจกรรม</title>
 
 	<link rel='icon' type='image/png' href='./favicon.png'>
 	<link rel='stylesheet' href='/global.css'>
 	<link rel='stylesheet' href='/build/bundle.css'>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script>
+		function SubForm() {
+			$.ajax({
+				url: 'https://api.apispreadsheets.com/data/MnEvtAO1LBqeZmDc/',
+				type: 'post',
+				data: $("#myForm").serializeArray(),
+				success: function () {
+					alert("สมัครติดตามข่าวสารเรียบร้อยแล้ว")
+				},
+				error: function () {
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
 
 	<script defer src='/build/bundle.js'></script>
 </head>
