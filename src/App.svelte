@@ -1,9 +1,11 @@
 <script>
 	//import app element
-	import Home from "./Home.svelte";
+	import Home_1 from "./Home_1.svelte";
+	import Home_2 from "./Home_2.svelte";
 	import Details from "./Details.svelte";
 	import Contact from "./Contact.svelte";
 	import Donate from "./Donate.svelte";
+	import Loading from "./Loading.svelte";
 
 	// Import the functions you need from the SDKs you need
 	import { initializeApp } from "firebase/app";
@@ -30,68 +32,86 @@
 	//define routes
 	let mode = "home";
 
-	function setTo(page) {
+	async function setTo(page) {
+
+		if (mode != page) {
+			document.getElementById(mode).style.display = "none";
+			document.getElementById("loading").style.display = "block"
+			setTimeout(function(){document.getElementById("loading").style.display = "none"},1000);
+		};
+	
 		//set color of navbar
 		if (page == "home") {
-			document.getElementById("home").style.color = "#EF8E44";
+			document.getElementById("home-btn").style.color = "#EF8E44";
 		} else {
-			document.getElementById("home").style.color = "#FFFFFF";
+			document.getElementById("home-btn").style.color = "#FFFFFF";
 		}
 		if (page == "details") {
-			document.getElementById("details").style.color = "#EF8E44";
+			document.getElementById("details-btn").style.color = "#EF8E44";
 		} else {
-			document.getElementById("details").style.color = "#FFFFFF";
+			document.getElementById("details-btn").style.color = "#FFFFFF";
 		}
 		if (page == "contact") {
-			document.getElementById("contact").style.color = "#EF8E44";
+			document.getElementById("contact-btn").style.color = "#EF8E44";
 		} else {
-			document.getElementById("contact").style.color = "#FFFFFF";
+			document.getElementById("contact-btn").style.color = "#FFFFFF";
 		}
 		if (page == "donate") {
-			document.getElementById("donate").style.color = "#EF8E44";
+			document.getElementById("donate-btn").style.color = "#EF8E44";
 		} else {
-			document.getElementById("donate").style.color = "#FFFFFF";
+			document.getElementById("donate-btn").style.color = "#FFFFFF";
 		}
 
 		//set mode
-		mode = page;
+		setTimeout(function(){mode = page},1000);
 	}
+	
 </script>
 
 <main>
 	<!--Nav Bar-->
 	<div class="sticky">
-		<nav>
+		<nav id="nav">
 			<ul>
 				<li>
 					<img src="img/Logo.png" alt="logo" width="100" />
 				</li>
 				<li>
-					<button id="home" on:click={() => setTo("home")}>หน้าหลัก</button>
+					<button id="home-btn" on:click={() => setTo("home")}>หน้าหลัก</button>
 				</li>
 				<li>
-					<button id="details" on:click={() => setTo("details")}>รายละเอียด</button>
+					<button id="details-btn" on:click={() => setTo("details")}>รายละเอียด</button>
 				</li>
 				<li>
-					<button id="contact" on:click={() => setTo("contact")}>ติดต่อเรา</button>
+					<button id="contact-btn" on:click={() => setTo("contact")}>ติดต่อเรา</button>
 				</li>
 				<li>
-					<button id="donate" on:click={() => setTo("donate")}>สนับสนุน</button>
+					<button id="donate-btn" on:click={() => setTo("donate")}>สนับสนุน</button>
 				</li>
 			</ul>
 		</nav>
 	</div>
-
+	
+	<div id="loading"><Loading /></div>
+	
 	<!--set page mode-->
 	{#if mode == "home"}
-		<Home />
-		<Home />
+		<div id="home">
+			<Home_1 />
+			<Home_2 />
+		</div>
 	{:else if mode == "details"}
-		<Details />
+		<div id="details">
+			<Details />
+		</div>
 	{:else if mode == "contact"}
-		<Contact />
+		<div id="contact">
+			<Contact />
+		</div>
 	{:else if mode == "donate"}
-		<Donate />
+		<div id="donate">
+			<Donate />
+		</div>
 	{/if}
 </main>
 
@@ -145,7 +165,7 @@
 		color: #68bde1;
 	}
 
-	nav ul li button#home {
+	nav ul li button#home-btn {
 		color: #ef8e44;
 	}
 
@@ -153,5 +173,8 @@
 		position: sticky;
 		top: 0;
 		z-index: 100;
+	}
+	#loading {
+		display: none;
 	}
 </style>
