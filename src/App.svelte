@@ -6,6 +6,7 @@
 	import Contact from "./Contact.svelte";
 	import Donate from "./Donate.svelte";
 	import Loading from "./Loading.svelte";
+	import Subscribe from "./Subscribe.svelte";
 
 	// Import the functions you need from the SDKs you need
 	import { initializeApp } from "firebase/app";
@@ -99,6 +100,7 @@
 		<div id="home">
 			<Home_1 />
 			<Home_2 />
+			<Subscribe />
 		</div>
 	{:else if mode == "details"}
 		<div id="details">
