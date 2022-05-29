@@ -5,21 +5,34 @@
   crossorigin="anonymous"></script>
 <script>
     function SubForm (){
+        console.log("send data inprogress");
+        document.getElementById("send-data").style.display = "block";
+        document.getElementById("body").style.display = "none";
         $.ajax({
             url:'https://api.apispreadsheets.com/data/MnEvtAO1LBqeZmDc/',
             type:'post',
             data:$("#myForm").serializeArray(),
             success: function(){
+            console.log("send data success");
+            document.getElementById("send-data").style.display = "none";
+            document.getElementById("body").style.display = "block";
             alert("สมัครติดตามข่าวสารเรียบร้อยแล้ว")
+            document.getElementById("name").value = "";
+            document.getElementById("lastname").value = "";
+            document.getElementById("age").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("etc").value = "";
             },
             error: function(){
             alert("There was an error :(")
             }
         });
+        
 }
 </script>
 </head>
-<body>
+<p id="send-data" >send data inprogress ...</p>
+<body id="body">
     <p id="head">สมัครติดตามข่าวสาร</p>
     <div id="container">
   <form id="myForm">
@@ -94,5 +107,12 @@
         font-family: 'Mitr', sans-serif;
         margin-top: 20px;
         margin-left: 20px;
+    }
+    #send-data{
+        text-align: center;
+        font-family: 'Mitr', sans-serif;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        display: none;
     }
 </style>
