@@ -34,7 +34,7 @@
         <form
             id="my-Form"
             method="POST"
-            action="https://script.google.com/macros/s/AKfycbz5fEv3gwQ9uj7B_JQPbAPw06XUn4re2Hv2Zo5Kk8TGOhaC4PjKOqg-2V78VDNAfWezTQ/exec"
+            action="https://script.google.com/macros/s/AKfycbxlZ5IZBp8DgChaEf0wnBr14OHaF6DylRJEeAkW5a8fzy5XcqvGIUWlnTvRnS_cuHCbag/exec"
         >
             <div id="name-box" class="form-group">
                 <input
