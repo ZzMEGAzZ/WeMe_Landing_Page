@@ -4,18 +4,19 @@
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
 <script>
-function SubForm (){
-    $.ajax({
-        url:'https://api.apispreadsheets.com/data/MnEvtAO1LBqeZmDc/',
-        type:'post',
-        data:$("#myForm").serializeArray(),
-        success: function(){
-          alert("สมัครติดตามข่าวสารเรียบร้อยแล้ว)")
-        },
-        error: function(){
-          alert("There was an error :(")
-        }
-    });
+    function SubForm (){
+        $.ajax({
+            url:'https://api.apispreadsheets.com/data/MnEvtAO1LBqeZmDc/',
+            type:'post',
+            data:$("#myForm").serializeArray(),
+            success: function(){
+            alert("สมัครติดตามข่าวสารเรียบร้อยแล้ว")
+            },
+            error: function(){
+            alert("There was an error :(")
+            }
+        });
+    
 }
 </script>
 </head>
@@ -36,7 +37,7 @@ function SubForm (){
       <textarea type="text" id="etc" name="สิ่งที่อยากจะบอกเรา" placeholder="สิ่งที่อยากจะบอกเรา"/>
     </div>
   </form>
-  <button onclick="SubForm()">Submit</button>
+  <button on:click={() => SubForm()}>Submit</button>
     </div>
 </body>
 
