@@ -171,6 +171,22 @@
 		color: #ef8e44;
 	}
 
+	@media screen and (max-width: 600px) {
+  nav ul {
+    float: none;
+    display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+}
+
 	.sticky {
 		position: sticky;
 		top: 0;
@@ -179,4 +195,5 @@
 	#loading {
 		display: none;
 	}
+
 </style>

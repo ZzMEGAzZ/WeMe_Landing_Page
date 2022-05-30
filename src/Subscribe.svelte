@@ -27,6 +27,8 @@
 </script>
 
 <p id="send-data" >send data inprogress ...</p>
+<p id="sub">โปรดใช้อุปกรณ์ขนาดกว้างมากกว่า 900px ในการสมัครติดตามข่าวสาร</p>
+
 
 <body id="body">
     <p id="head">สมัครติดตามข่าวสาร</p>
@@ -92,6 +94,7 @@
         background-color: #f2f2f2;
         font-family: "Mitr", sans-serif;
         font-family: "Righteous", cursive;
+        height: 30vh;
     }
     p#head {
         font-family: "Mitr", sans-serif;
@@ -101,16 +104,17 @@
         margin-top: 20px;
     }
     #container {
-        width: 100%;
-        height: 100%;
+        width: 90vw;
+        height: 20vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     form {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 30vh;
+        padding: 30px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -142,11 +146,28 @@
         margin-top: 20px;
         margin-left: 20px;
     }
-    #send-data{
+    #send-data, #sub {
         text-align: center;
         font-family: 'Mitr', sans-serif;
         font-size: 20px;
         color: rgb(0, 0, 0);
         display: none;
     }
+    #sub {
+        margin: 0;
+        padding:20px;
+    }
+    @media screen and (max-width: 900px) {
+    #sub {
+        display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        display: none;
+  }
+}
+
+
 </style>
