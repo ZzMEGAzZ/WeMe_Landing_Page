@@ -27,8 +27,6 @@
 </script>
 
 <p id="send-data" >send data inprogress ...</p>
-<p id="sub">โปรดใช้อุปกรณ์ขนาดกว้างมากกว่า 900px ในการสมัครติดตามข่าวสาร</p>
-
 
 <body id="body">
     <p id="head">สมัครติดตามข่าวสาร</p>
@@ -62,10 +60,7 @@
                     id="age"
                     placeholder="อายุ"
                     name="อายุ"
-                    required
                 />
-            </div>
-            <div id="email-box" class="form-group">
                 <input
                     type="email"
                     class="form-control"
@@ -93,19 +88,16 @@
     body {
         background-color: #f2f2f2;
         font-family: "Mitr", sans-serif;
-        font-family: "Righteous", cursive;
-        height: 30vh;
     }
     p#head {
         font-family: "Mitr", sans-serif;
         font-size: 30px;
         color: rgb(0, 0, 0);
         text-align: center;
-        margin-top: 20px;
+        margin: 0;
     }
     #container {
-        width: 90vw;
-        height: 20vh;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -113,10 +105,9 @@
     }
     form {
         width: 100vw;
-        height: 30vh;
         padding: 30px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -131,7 +122,7 @@
         min-height: 200px;
         max-width: 300px;
         max-height: 250px;
-        margin-left: 20px;
+        margin-top: 20px;
         border-radius: 20px;
     }
     input {
@@ -144,29 +135,28 @@
         font-size: 20px;
         font-family: "Mitr", sans-serif;
         margin-top: 20px;
-        margin-left: 20px;
     }
-    #send-data, #sub {
+    #send-data {
         text-align: center;
         font-family: 'Mitr', sans-serif;
         font-size: 20px;
         color: rgb(0, 0, 0);
         display: none;
     }
-    #sub {
-        margin: 0;
-        padding:20px;
+    @media only screen and (min-width: 767px) {
+    #container {
+        flex-direction: row;
     }
-    @media screen and (max-width: 900px) {
-    #sub {
-        display: block;
-  }
-}
-
-@media screen and (max-width: 900px) {
-    body {
-        display: none;
-  }
+    form {
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    textarea {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 

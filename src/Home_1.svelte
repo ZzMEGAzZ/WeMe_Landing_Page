@@ -29,7 +29,6 @@
         padding: 0;
         box-sizing: border-box;
     }
-
     :root {
         --secondary-color: #fff4ee;
         --contrast-color: #68bde1;
@@ -40,16 +39,15 @@
         left: 0;
         right: 0;
         bottom: 0;
-        height: 100%;
+        height: 100vh;
         z-index: -10;
         background-color: var(--contrast-color);
     }
 
     .container {
         display: flex;
-        height: 100vh;
+        flex-direction: column;
         justify-content: space-around;
-        align-items: center;
         color: #ef8e44;
         animation: expand 0.8s ease forwards;
         background-color: var(--secondary-color);
@@ -59,17 +57,16 @@
     }
 
     .container_content {
-        width: 50%;
+        width: 100%;
     }
 
     .container_content_inner {
-        width: 80%;
-        margin-left: 80px;
+        width: 100%;
+        text-align: center;
     }
 
     .container_outer_img {
-        margin: 50px;
-        width: 50%;
+        margin: 20px;
         overflow: hidden;
     }
 
@@ -92,7 +89,6 @@
     .btns {
         height: 100%;
         position: relative;
-        width: 150px;
         overflow: hidden;
     }
 
@@ -119,10 +115,37 @@
     h1 {
         font-size: 40px;
         color: var(--contrast-color);
+        margin-top: 20px;
         margin-bottom: 20px;
         transform: translateY(100px);
         animation: slideUp 0.8s ease forwards 0.5s;
     }
+
+    @media only screen and (min-width: 767px) {
+        .container {
+            width: 100%;
+            height: 100vh;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: var(--secondary-color);
+        }
+
+        .container_content {
+            width: 50%;
+        }
+
+        .container_content_inner {
+            width: 80%;
+            margin-left: 80px;
+            text-align: left;
+        }
+
+        .container_outer_img {
+            margin: 50px;
+            width: 50%;
+        }
+}
 
     @keyframes slideIn {
         0% {
