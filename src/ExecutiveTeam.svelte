@@ -12,8 +12,8 @@
 <header class="main-header">
     <h1><span>WeMe</span> Excutive Team</h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-      quam!
+        You + Me = We <br />
+        Wouldn't be me without you
     </p>
   </header>
 
@@ -21,14 +21,15 @@
     <section id="card" class="mb-top">
       <img src="https://i.ibb.co/VvC0vpN/paint-1.png" alt="" />
       <div>
-        <h2>{$Excutive[0].nickname}</h2>
-        <h3>{$Excutive[0].name} {$Excutive[0].lastname}</h3>
-        <p>{$Excutive[0].position}</p>
-        <p>{$Excutive[0].university}</p>
-        <p>{$Excutive[0].faculty} {$Excutive[0].major}</p>
+        <h2>{$Excutive.CEO.nickname}</h2>
+        <h3>{$Excutive.CEO.name} {$Excutive.CEO.lastname}</h3>
+        <p>{$Excutive.CEO.position}</p>
+        <p>{$Excutive.CEO.university}</p>
+        <p>{$Excutive.CEO.faculty}</p>
+        <p>{$Excutive.CEO.major}</p>
         <br />
         <p>
-            {$Excutive[0].description}
+            {$Excutive.CEO.description}
         </p>
       </div>
     </section>
@@ -36,14 +37,15 @@
     <section id="card" class="mb-bottom" data-aos="fade-left">
       <img src="https://i.ibb.co/3NHjDcW/paint-2.png" alt="" />
       <div>
-        <h2>{$Excutive[1].nickname}</h2>
-        <h3>{$Excutive[1].name} {$Excutive[1].lastname}</h3>
-        <p>{$Excutive[1].position}</p>
-        <p>{$Excutive[1].university}</p>
-        <p>{$Excutive[1].faculty} {$Excutive[1].major}</p>
+        <h2>{$Excutive.CMO.nickname}</h2>
+        <h3>{$Excutive.CMO.name} {$Excutive.CMO.lastname}</h3>
+        <p>{$Excutive.CMO.position}</p>
+        <p>{$Excutive.CMO.university}</p>
+        <p>{$Excutive.CMO.faculty}</p> 
+        <p>{$Excutive.CMO.major}</p>
         <br />
         <p>
-            {$Excutive[1].description}
+            {$Excutive.CMO.description}
         </p>
       </div>
     </section>
@@ -51,14 +53,15 @@
     <section id="card" class="mb-top" data-aos="fade-right">
       <img src="https://i.ibb.co/0VywMkW/paint-3.png" alt="" />
       <div>
-        <h2>{$Excutive[2].nickname}</h2>
-        <h3>{$Excutive[2].name} {$Excutive[2].lastname}</h3>
-        <p>{$Excutive[2].position}</p>
-        <p>{$Excutive[2].university}</p>
-        <p>{$Excutive[2].faculty} {$Excutive[2].major}</p>
+        <h2>{$Excutive.CCO.nickname}</h2>
+        <h3>{$Excutive.CCO.name} {$Excutive.CCO.lastname}</h3>
+        <p>{$Excutive.CCO.position}</p>
+        <p>{$Excutive.CCO.university}</p>
+        <p>{$Excutive.CCO.faculty} </p>
+        <p>{$Excutive.CCO.major}</p>
         <br />
         <p>
-            {$Excutive[2].description}
+            {$Excutive.CCO.description}
         </p>
       </div>
     </section>
@@ -66,14 +69,15 @@
     <section id="card" class="mb-bottom" data-aos="fade-left">
       <img src="https://i.ibb.co/5LkJFRP/paint-4.png" alt="" />
       <div>
-        <h2>{$Excutive[3].nickname}</h2>
-        <h3>{$Excutive[3].name} {$Excutive[3].lastname}</h3>
-        <p>{$Excutive[3].position}</p>
-        <p>{$Excutive[3].university}</p>
-        <p>{$Excutive[3].faculty} {$Excutive[3].major}</p>
+        <h2>{$Excutive.COO.nickname}</h2>
+        <h3>{$Excutive.COO.name} {$Excutive.COO.lastname}</h3>
+        <p>{$Excutive.COO.position}</p>
+        <p>{$Excutive.COO.university}</p>
+        <p>{$Excutive.COO.faculty}</p>
+        <p>{$Excutive.COO.major}</p>
         <br />
         <p>
-            {$Excutive[3].description}
+            {$Excutive.COO.description}
         </p>
       </div>
     </section>
@@ -81,14 +85,15 @@
     <section id="card" class="mb-top" data-aos="fade-right">
       <img src="https://i.ibb.co/61R8Q2y/paint-5.png" alt="" />
       <div>
-        <h2>{$Excutive[4].nickname}</h2>
-        <h3>{$Excutive[4].name} {$Excutive[4].lastname}</h3>
-        <p>{$Excutive[4].position}</p>
-        <p>{$Excutive[4].university}</p>
-        <p>{$Excutive[4].faculty} {$Excutive[4].major}</p>
+        <h2>{$Excutive.CTO.nickname}</h2>
+        <h3>{$Excutive.CTO.name} {$Excutive.CTO.lastname}</h3>
+        <p>{$Excutive.CTO.position}</p>
+        <p>{$Excutive.CTO.university}</p>
+        <p>{$Excutive.CTO.faculty}</p>
+        <p>{$Excutive.CTO.major}</p>
         <br />
         <p>
-            {$Excutive[4].description}
+            {$Excutive.CTO.description}
         </p>
       </div>
     </section>

@@ -40,11 +40,11 @@
         padding: 0 40px;
     }
     .content__container:before {
-        content: "[";
+        content: "<";
         left: 0;
     }
     .content__container:after {
-        content: "]";
+        content: ">";
         position: absolute;
         right: 0;
     }
@@ -52,7 +52,7 @@
     .content__container:before {
         position: absolute;
         top: 0;
-        color: #16a085;
+        color: #68bde1;
         font-size: 42px;
         line-height: 40px;
         -webkit-animation-name: opacity;

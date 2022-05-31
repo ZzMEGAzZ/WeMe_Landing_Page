@@ -1,7 +1,7 @@
 import { readable, writable } from "svelte/store";
 
-const Member = [
-    {
+const Member = {
+    CEO : {
         nickname : "สปาย",
         name : "ภัทราดา",
         lastname : "มิโคทะ",
@@ -10,9 +10,9 @@ const Member = [
         faculty : "Faculty of Engineering",
         major : "Software engineering",
         description : "XXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXX",
-        img : "./img/spy.jpg"
+        img : "./img/spy.png"
     },
-    {
+    CMO :{
         nickname : "รัน",
         name : "พศุตม์",
         lastname : "อินทร์สังข์",
@@ -21,9 +21,9 @@ const Member = [
         faculty : "Faculty of Engineering",
         major : "Software engineering",
         description : "XXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXX",
-        img : "./img/run.jpg"
+        img : "./img/run.png"
     },
-    {
+    CCO : {
         nickname : "อาย",
         name : "กานต์พิชชา",
         lastname : "หงส์เอก",
@@ -32,9 +32,9 @@ const Member = [
         faculty : "Faculty of Engineering",
         major : "Software engineering",
         description : "XXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXX",
-        img : "./img/aye.jpg"
+        img : "./img/aye.png"
     },
-    {
+    COO :{
         nickname : "ต้น",
         name : "ชิษณุพงศ์",
         lastname : "เพ็งชัย",
@@ -43,9 +43,9 @@ const Member = [
         faculty : "Faculty of Engineering",
         major : "Software engineering",
         description : "XXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXX",
-        img : "./img/ton.jpg"
+        img : "./img/ton.png"
     },
-    {
+    CTO : {
         nickname : "เมฆ",
         name : "อภิสิทธิ์",
         lastname : "แสงกระจ่าง",
@@ -54,11 +54,9 @@ const Member = [
         faculty : "Faculty of Engineering",
         major : "Software engineering",
         description : "XXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXX",
-        img : "./img/mek.jpg"
+        img : "./img/mek.png"
     }
-];
-
-
+};
 
 export const mode = writable("");
 export const Excutive = readable(Member);
