@@ -3,7 +3,7 @@ import { readable, writable } from "svelte/store";
 const Member = {
     CEO : {
         nickname : "สปาย",
-        name : "ภัทราดา",
+        name : "ภัทรดา",
         lastname : "มิโคทะ",
         position : "Chief Excutive Officer",
         university : "Thammasart Universitity",
