@@ -1,6 +1,7 @@
 <script>
 	//import app element
 	import {mode} from "./Stores.js";
+	import Top from "./Top.svelte";
 	import Home_1 from "./Home_1.svelte";
 	import Nav from "./Nav.svelte";
 	import Details from "./Details.svelte";
@@ -39,6 +40,7 @@
 	<div class="sticky">
 		<Nav />
 	</div>
+	<Top />
 	
 	<!--set page mode-->
 	{#if $mode == "home"}

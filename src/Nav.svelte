@@ -218,5 +218,9 @@
       .navbar-list button {
         display: inline-flex;
       }
+
+      .navbar-list li:before {
+      background-color: transparent;
+    }
     }
   </style>
