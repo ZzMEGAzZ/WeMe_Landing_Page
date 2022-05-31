@@ -26,7 +26,7 @@
     });
 </script>
 
-<p id="send-data" >send data inprogress ...</p>
+<p id="send-data" >sending data in progress ...</p>
 
 <body id="body">
     <p id="head">สมัครติดตามข่าวสาร</p>

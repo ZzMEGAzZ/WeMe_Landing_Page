@@ -66,6 +66,7 @@
         display: inline;
         float: left;
         margin: 0;
+        color: #ef8e44;
     }
     .content__container__list {
         margin-top: 0;

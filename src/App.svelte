@@ -5,6 +5,7 @@
 	import Home_1 from "./Home_1.svelte";
 	import Nav from "./Nav.svelte";
 	import Details from "./Details.svelte";
+	import ExecutiveTeam from "./ExecutiveTeam.svelte";
 	import Contact from "./Contact.svelte";
 	import Donate from "./Donate.svelte";
 	import Subscribe from "./Subscribe.svelte";
@@ -54,6 +55,7 @@
 		</div>
 	{:else if $mode == "contact"}
 		<div id="contact">
+			<ExecutiveTeam />
 			<Contact />
 		</div>
 	{:else if $mode == "donate"}
