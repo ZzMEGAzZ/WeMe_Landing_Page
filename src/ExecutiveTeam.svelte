@@ -99,7 +99,6 @@
 main {
   font-size: 1.3rem;
   font-family: 'Oswald', sans-serif;
-  background: #f9f9f9;
 }
 
 .container {
