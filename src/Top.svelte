@@ -2,7 +2,6 @@
     <div class="content">
         <div class="content__container">
             <p class="content__container__text">Find</p>
-
             <ul class="content__container__list">
                 <li class="content__container__list__item">Friends !</li>
                 <li class="content__container__list__item">Activity !</li>

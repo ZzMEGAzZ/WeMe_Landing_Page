@@ -1,4 +1,5 @@
 <script>
+    //commit from to script gooogle sheet
     window.addEventListener("load", function () {
         const form = document.getElementById("my-Form");
         form.addEventListener("submit", function (e) {
@@ -16,11 +17,8 @@
 				document.getElementById("send-data").style.display = "none";
 				document.getElementById("body").style.display = "block";
                 alert("สมัครติดตามข่าวสารเรียบร้อยแล้ว")
-                document.getElementById("name").value = "";
-				document.getElementById("lastname").value = "";
-				document.getElementById("age").value = "";
-				document.getElementById("email").value = "";
-				document.getElementById("etc").value = "";
+                //reset form
+                document.getElementById("my-Form").reset();
             });
         });
     });
@@ -28,7 +26,9 @@
 
 <p id="send-data" >sending data in progress ...</p>
 
-<body id="body">
+<!--Script src = https://script.google.com/macros/s/AKfycbxlZ5IZBp8DgChaEf0wnBr14OHaF6DylRJEeAkW5a8fzy5XcqvGIUWlnTvRnS_cuHCbag/exec -->
+
+<main id="body">
     <p id="head">สมัครติดตามข่าวสาร</p>
     <div id="container">
         <form
@@ -82,10 +82,10 @@
                 >สมัครรับข้อมูล</button>
         </form>
     </div>
-</body>
+</main>
 
 <style>
-    body {
+    main {
         background-color: #f2f2f2;
         font-family: "Mitr", sans-serif;
     }

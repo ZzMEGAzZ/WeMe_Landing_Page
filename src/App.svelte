@@ -32,6 +32,7 @@
 	const app = initializeApp(firebaseConfig);
 	const analytics = getAnalytics(app);
 
+	// Set mode
 	$mode = "home";
 	
 </script>
@@ -41,6 +42,8 @@
 	<div class="sticky">
 		<Nav />
 	</div>
+	<!--Nav Bar-->
+
 	<Top />
 	
 	<!--set page mode-->
@@ -67,6 +70,8 @@
 			<Subscribe />
 		</div>
 	{/if}
+	<!--set page mode-->
+
 </main>
 
 <style>

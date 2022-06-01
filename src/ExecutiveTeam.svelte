@@ -28,9 +28,7 @@
         <p>{$Excutive.CEO.faculty}</p>
         <p>{$Excutive.CEO.major}</p>
         <br />
-        <p>
-            {$Excutive.CEO.description}
-        </p>
+        <p>{$Excutive.CEO.description}</p>
       </div>
     </section>
 
@@ -44,9 +42,7 @@
         <p>{$Excutive.CMO.faculty}</p> 
         <p>{$Excutive.CMO.major}</p>
         <br />
-        <p>
-            {$Excutive.CMO.description}
-        </p>
+        <p>{$Excutive.CMO.description}</p>
       </div>
     </section>
 
@@ -60,9 +56,7 @@
         <p>{$Excutive.CCO.faculty} </p>
         <p>{$Excutive.CCO.major}</p>
         <br />
-        <p>
-            {$Excutive.CCO.description}
-        </p>
+        <p>{$Excutive.CCO.description}</p>
       </div>
     </section>
 
@@ -76,9 +70,7 @@
         <p>{$Excutive.COO.faculty}</p>
         <p>{$Excutive.COO.major}</p>
         <br />
-        <p>
-            {$Excutive.COO.description}
-        </p>
+        <p>{$Excutive.COO.description}</p>
       </div>
     </section>
 
@@ -92,9 +84,7 @@
         <p>{$Excutive.CTO.faculty}</p>
         <p>{$Excutive.CTO.major}</p>
         <br />
-        <p>
-            {$Excutive.CTO.description}
-        </p>
+        <p>{$Excutive.CTO.description}</p>
       </div>
     </section>
   </main>
