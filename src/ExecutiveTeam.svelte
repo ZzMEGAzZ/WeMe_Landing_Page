@@ -110,7 +110,6 @@ main {
 }
 
 .main-header {
-  height: 55vh;
   padding: 2rem;
   display: flex;
   flex-direction: column;
