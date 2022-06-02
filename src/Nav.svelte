@@ -1,226 +1,250 @@
 <script>
-    import { onMount } from "svelte";
     import { mode } from "./Stores.js";
-  
-    // Show mobile icon and display menu
-    let showMobileMenu = false;
-  
-    // Mobile menu click event handler
-    const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu);
-  
-    // Media match query handler
-    const mediaQueryHandler = e => {
-      // Reset mobile state
-      if (!e.matches) {
-        showMobileMenu = false;
-      }
-    };
-  
-    // Attach media query listener on mount hook
-    onMount(() => {
-      const mediaListener = window.matchMedia("(max-width: 767px)");
-  
-      mediaListener.addListener(mediaQueryHandler);
-    });
 
 
   function setTo(page) {
     //set color of navbar
     if (page == "home") {
-      document.getElementById("home-btn").style.color = "#EF8E44";
+      document.getElementById("home-btn").style.border = "#EF8E44 solid 2px";
     } else {
-      document.getElementById("home-btn").style.color = "#FFFFFF";
+      document.getElementById("home-btn").style.border = "none";
     }
     if (page == "details") {
-      document.getElementById("details-btn").style.color = "#EF8E44";
+      document.getElementById("details-btn").style.border = "#EF8E44 solid 2px";
     } else {
-      document.getElementById("details-btn").style.color = "#FFFFFF";
+      document.getElementById("details-btn").style.border = "none";
     }
     if (page == "contact") {
-      document.getElementById("contact-btn").style.color = "#EF8E44";
+      document.getElementById("contact-btn").style.border = "#EF8E44 solid 2px";
     } else {
-      document.getElementById("contact-btn").style.color = "#FFFFFF";
+      document.getElementById("contact-btn").style.border = "none";
     }
     if (page == "donate") {
-      document.getElementById("donate-btn").style.color = "#EF8E44";
+      document.getElementById("donate-btn").style.border = "#EF8E44 solid 2px";
     } else {
-      document.getElementById("donate-btn").style.color = "#FFFFFF";
+      document.getElementById("donate-btn").style.border = "none";
+    }
+    if (page == "subscribe") {
+      document.getElementById("subscribe-btn").style.border = "#EF8E44 solid 2px";
+    } else {
+      document.getElementById("subscribe-btn").style.border = "none";
     }
 
     //set mode
-    $mode = page
-    showMobileMenu = false;
+    document.getElementById("checkbox").checked = false;
+    $mode = page;
+
     }
   </script>
-  
+<body>
   <nav>
-    <div class="inner">
-      <div on:click={handleMobileIconClick} class={`mobile-icon${showMobileMenu ? ' active' : ''}`}>
-        <div class="middle-line"></div>
+    <div class="navbar">
+      <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="" id="checkbox" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>  
+        <div class="menu-items">
+          <ul>
+          <li>
+            <img src="img/Logo.png" alt="logo" width="100" />
+          </li>
+          <li>
+            <button id="home-btn" on:click={() => setTo("home")}>หน้าหลัก</button>
+          </li>
+          <li>
+            <button id="details-btn" on:click={() => setTo("details")}>รายละเอียด</button>
+          </li>
+          <li>
+            <button id="contact-btn" on:click={() => setTo("contact")}>ติดต่อเรา</button>
+          </li>
+          <li>
+            <button id="donate-btn" on:click={() => setTo("donate")}>สนับสนุน</button>
+          </li>
+          <li>
+            <button id="subscribe-btn" on:click={() => setTo("subscribe")}>ติดตามข่าวสาร</button>
+          </li>
+        </ul>
+        </div>
       </div>
-      <ul class={`navbar-list${showMobileMenu ? ' mobile' : ''}`}>
-        <li>
-					<img src="img/Logo.png" alt="logo" width="100" />
-				</li>
-				<li>
-					<button id="home-btn" on:click={() => setTo("home")}>หน้าหลัก</button>
-				</li>
-				<li>
-					<button id="details-btn" on:click={() => setTo("details")}>รายละเอียด</button>
-				</li>
-				<li>
-					<button id="contact-btn" on:click={() => setTo("contact")}>ติดต่อเรา</button>
-				</li>
-				<li>
-					<button id="donate-btn" on:click={() => setTo("donate")}>สนับสนุน</button>
-				</li>
-        <li>
-					<button id="donate-btn" on:click={() => setTo("subscribe")}>ติดตามข่าวสาร</button>
-				</li>
-      </ul>
     </div>
   </nav>
-  
-  <style>
-    nav {
-      background-color: rgba(0, 0, 0);
-      font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-      height: 60px;
-    }
-  
-    .inner {
-      max-width: 980px;
-      padding-left: 20px;
-      padding-right: 20px;
-      box-sizing: border-box;
-      display: flex;
-      align-items: center;
-      height: 100%;
-    }
-  
-    .mobile-icon {
-      width: 25px;
-      height: 14px;
-      position: relative;
-      cursor: pointer;
-    }
-  
-    .mobile-icon:after,
-    .mobile-icon:before,
-    .middle-line {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: #fff;
-      transition: all 0.4s;
-      transform-origin: center;
-    }
-  
-    .mobile-icon:before,
-    .middle-line {
-      top: 0;
-    }
-  
-    .mobile-icon:after,
-    .middle-line {
-      bottom: 0;
-    }
-  
-    .mobile-icon:before {
-      width: 66%;
-    }
-  
-    .mobile-icon:after {
-      width: 33%;
-    }
-  
-    .middle-line {
-      margin: auto;
-    }
-  
-    .mobile-icon:hover:before,
-    .mobile-icon:hover:after,
-    .mobile-icon.active:before,
-    .mobile-icon.active:after,
-    .mobile-icon.active .middle-line {
-      width: 100%;
-    }
-  
-    .mobile-icon.active:before,
-    .mobile-icon.active:after {
-      top: 50%;
-      transform: rotate(-45deg);
-    }
-  
-    .mobile-icon.active .middle-line {
-      transform: rotate(45deg);
-    }
-  
-    .navbar-list {
-      display: none;
-      width: 100%;
-      justify-content: space-between;
-      margin: 0;
-      padding: 0 40px;
-    }
-  
-    .navbar-list.mobile {
-      background-color: rgba(0, 0, 0);
-      position: fixed;
-      display: block;
-      height: calc(100% - 45px);
-      bottom: 0;
-      left: 0;
-    }
-  
-    .navbar-list li {
-      list-style-type: none;
-      position: relative;
-    }
-  
-    .navbar-list li:before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background-color: #424245;
-    }
-  
-    .navbar-list button {
-      color: #fff;
-      background-color: transparent;
-      border: none;
-      text-decoration: none;
-      display: flex;
-      height: 45px;
-      align-items: center;
-      padding: 0 10px;
-      font-size: 13px;
-    }
+</body>
 
-    #home-btn {
-      color: #EF8E44;
-    }
   
-    @media only screen and (min-width: 767px) {
-      .mobile-icon {
-        display: none;
-      }
-  
-      .navbar-list {
-        display: flex;
-        padding: 0;
-      }
-  
-      .navbar-list button {
-        display: inline-flex;
-      }
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-      .navbar-list li:before {
-      background-color: transparent;
-    }
-    }
-  </style>
+  body {
+    background-color: black;
+    overflow: hidden;
+  }
+
+  img {
+    padding: 10px;
+  }
+
+.container {
+  width: 100vw;
+  margin: auto;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  top: 5px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container button {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.navbar .nav-container button:hover{
+    font-weight: bolder;
+    color: #68BDE1;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+#home-btn {
+  border: #EF8E44 solid 2px;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 90px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #EF8E44;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  display: block;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+@media only screen and (min-width: 767px) {
+  ul {
+    display: flex;
+  }
+
+  .navbar .menu-items {
+    padding: 0px;
+    background-color: black;
+    height: 0%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+  .nav-container .hamburger-lines {
+    display: none;
+  }
+  .navbar .menu-items {
+  transform: none;
+  transition: none;
+}
+  #checkbox {
+    display: none;
+  }
+}
+
+</style>

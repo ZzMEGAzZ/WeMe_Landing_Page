@@ -17,6 +17,7 @@
     body {
         width: 100%;
         height: 50px;
+        overflow: hidden;
         background-color: #000000;
     }
     .content {

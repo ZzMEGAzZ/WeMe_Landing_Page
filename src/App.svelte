@@ -79,7 +79,9 @@
 	:global(body) {
 		margin: 0;
 		padding: 0;
+		width: 100vw;
 		font-family: 'Mitr', sans-serif;
+		overflow-x: hidden;
 	}
 	.sticky {
 		position: sticky;

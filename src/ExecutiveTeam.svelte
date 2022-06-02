@@ -90,11 +90,6 @@
   </main>
 
 <style>
-    * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 main {
   font-size: 1.3rem;

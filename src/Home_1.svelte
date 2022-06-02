@@ -24,11 +24,6 @@
 <div class="overlay" />
 
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
     :root {
         --secondary-color: #fff4ee;
         --contrast-color: #68bde1;
