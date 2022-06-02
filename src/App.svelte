@@ -81,12 +81,16 @@
 		padding: 0;
 		width: 100vw;
 		font-family: 'Mitr', sans-serif;
-		overflow-x: hidden;
 	}
 	.sticky {
 		position: sticky;
 		top: 0;
 		z-index: 100;
+	}
+	@media only screen and (min-width: 767px) {
+		:global(body) {
+			overflow-x: hidden;
+		}
 	}
 
 </style>

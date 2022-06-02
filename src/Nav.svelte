@@ -79,7 +79,6 @@
 
   body {
     background-color: black;
-    overflow: hidden;
   }
 
   img {
@@ -222,6 +221,9 @@ button {
 }
 
 @media only screen and (min-width: 767px) {
+  body {
+    overflow: hidden;
+  }
   ul {
     display: flex;
   }
