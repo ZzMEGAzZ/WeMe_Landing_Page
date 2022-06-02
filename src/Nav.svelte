@@ -88,6 +88,7 @@
 
   body {
     background-color: black;
+    overflow-x: unset;
   }
 
   img {

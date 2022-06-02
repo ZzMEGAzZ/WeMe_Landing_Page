@@ -75,6 +75,7 @@
 <style>
 	@import url("https://fonts.googleapis.com/css2?family=Mitr&family=Righteous&display=swap");
 	:global(body) {
+		overflow-x: hidden;
 		margin: 0;
 		padding: 0;
 		width: 100vw;
@@ -84,10 +85,5 @@
 		position: sticky;
 		top: 0;
 		z-index: 100;
-	}
-	@media only screen and (min-width: 767px) {
-		:global(body) {
-			overflow-x: hidden;
-		}
 	}
 </style>
