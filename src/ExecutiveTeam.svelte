@@ -97,7 +97,7 @@
   .container {
     max-width: 1100px;
     margin: auto;
-    overflow: auto;
+    overflow: hidden;
     padding: 0 2rem;
   }
 
