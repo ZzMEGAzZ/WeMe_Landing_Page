@@ -95,7 +95,6 @@
   justify-content: space-between;
   align-items: center;
   height: 62px;
-  top: 5px;
 }
 
 .navbar .menu-items {
