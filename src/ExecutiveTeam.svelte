@@ -127,6 +127,7 @@
 
   img {
     width: 300px;
+    padding: 10px;
   }
 
   .mb-top {

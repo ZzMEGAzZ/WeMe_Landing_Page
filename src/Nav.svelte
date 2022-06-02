@@ -100,6 +100,10 @@
     margin: auto;
   }
 
+  ul {
+    padding: 0;
+  }
+
   .nav-container {
     display: flex;
     justify-content: space-between;
@@ -120,7 +124,7 @@
     color: white;
     font-weight: 500;
     font-size: 1.2rem;
-    padding: 0.5rem;
+    padding: 0.3rem;
   }
 
   .navbar .nav-container button:hover {
@@ -235,6 +239,7 @@
     }
     ul {
       display: flex;
+      padding-left: 50px;
     }
 
     .navbar .menu-items {
