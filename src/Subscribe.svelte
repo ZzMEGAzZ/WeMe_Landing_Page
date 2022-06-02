@@ -5,7 +5,7 @@
         form.addEventListener("submit", function (e) {
             console.log("send data inprogress");
             document.getElementById("send-data").style.display = "block";
-			document.getElementById("body").style.display = "none";
+            document.getElementById("body").style.display = "none";
             e.preventDefault();
             const data = new FormData(form);
             const action = e.target.action;
@@ -14,9 +14,9 @@
                 body: data,
             }).then(() => {
                 console.log("send data success");
-				document.getElementById("send-data").style.display = "none";
-				document.getElementById("body").style.display = "block";
-                alert("สมัครติดตามข่าวสารเรียบร้อยแล้ว")
+                document.getElementById("send-data").style.display = "none";
+                document.getElementById("body").style.display = "block";
+                alert("สมัครติดตามข่าวสารเรียบร้อยแล้ว");
                 //reset form
                 document.getElementById("my-Form").reset();
             });
@@ -24,7 +24,7 @@
     });
 </script>
 
-<p id="send-data" >sending data in progress ...</p>
+<p id="send-data">sending data in progress ...</p>
 
 <!--Script src = https://script.google.com/macros/s/AKfycbxlZ5IZBp8DgChaEf0wnBr14OHaF6DylRJEeAkW5a8fzy5XcqvGIUWlnTvRnS_cuHCbag/exec -->
 
@@ -78,8 +78,7 @@
                     placeholder="สิ่งที่อยากจะบอกเรา"
                 />
             </div>
-            <button type="submit" value="Submit"
-                >สมัครรับข้อมูล</button>
+            <button type="submit" value="Submit">สมัครรับข้อมูล</button>
         </form>
     </div>
 </main>
@@ -138,26 +137,24 @@
     }
     #send-data {
         text-align: center;
-        font-family: 'Mitr', sans-serif;
+        font-family: "Mitr", sans-serif;
         font-size: 20px;
         color: rgb(0, 0, 0);
         display: none;
     }
     @media only screen and (min-width: 767px) {
-    #container {
-        flex-direction: row;
-    }
-    form {
-        flex-direction: row;
-        justify-content: center;
-        padding: 0;
-    }
-    
-    textarea {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
+        #container {
+            flex-direction: row;
+        }
+        form {
+            flex-direction: row;
+            justify-content: center;
+            padding: 0;
+        }
 
-
+        textarea {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
 </style>

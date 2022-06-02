@@ -1,6 +1,6 @@
 <script>
 	//import app element
-	import {mode} from "./Stores.js";
+	import { mode } from "./Stores.js";
 	import Top from "./Top.svelte";
 	import Home_1 from "./Home_1.svelte";
 	import Nav from "./Nav.svelte";
@@ -34,7 +34,6 @@
 
 	// Set mode
 	$mode = "home";
-	
 </script>
 
 <main>
@@ -45,7 +44,7 @@
 	<!--Nav Bar-->
 
 	<Top />
-	
+
 	<!--set page mode-->
 	{#if $mode == "home"}
 		<div id="home">
@@ -71,16 +70,15 @@
 		</div>
 	{/if}
 	<!--set page mode-->
-
 </main>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Righteous&display=swap');
+	@import url("https://fonts.googleapis.com/css2?family=Mitr&family=Righteous&display=swap");
 	:global(body) {
 		margin: 0;
 		padding: 0;
 		width: 100vw;
-		font-family: 'Mitr', sans-serif;
+		font-family: "Mitr", sans-serif;
 	}
 	.sticky {
 		position: sticky;
@@ -92,5 +90,4 @@
 			overflow-x: hidden;
 		}
 	}
-
 </style>

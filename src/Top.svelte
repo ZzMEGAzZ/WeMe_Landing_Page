@@ -87,12 +87,12 @@
 
     @media only screen and (min-width: 767px) {
         body {
-        height: 75px;
+            height: 75px;
+        }
+        .content {
+            top: 90px;
+        }
     }
-    .content {
-        top: 90px;
-    }
-}
 
     @-webkit-keyframes opacity {
         0%,

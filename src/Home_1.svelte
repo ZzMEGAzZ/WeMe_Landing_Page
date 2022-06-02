@@ -47,7 +47,7 @@
         animation: expand 0.8s ease forwards;
         background-color: var(--secondary-color);
         position: relative;
-        font-family: 'Righteous', cursive;
+        font-family: "Righteous", cursive;
         transition: all 0.8s ease;
     }
 
@@ -140,7 +140,7 @@
             margin: 50px;
             width: 50%;
         }
-}
+    }
 
     @keyframes slideIn {
         0% {
