@@ -1,3 +1,17 @@
+<script>
+    import { mode } from "./Stores.js";  
+    
+    function setTo(page) {
+        $mode = page;
+        document.getElementById("details-btn").style.border = "#EF8E44 solid 2px";
+        document.getElementById("home-btn").style.border = "none";
+        document.getElementById("contact-btn").style.border = "none";
+        document.getElementById("donate-btn").style.border = "none";
+        document.getElementById("subscribe-btn").style.border = "none";
+    }
+
+</script>
+
 <div class="container">
     <div class="container_content">
         <div class="container_content_inner">
@@ -11,7 +25,7 @@
                 </p>
             </div>
             <div class="btns">
-                <button class="btns_more"> See more </button>
+                <button class="btns_more" on:click={() => setTo("details")}> See more </button>
             </div>
         </div>
     </div>

@@ -86,10 +86,8 @@
 <style>
     main {
         background-color: #f2f2f2;
-        font-family: "Mitr", sans-serif;
     }
     p#head {
-        font-family: "Mitr", sans-serif;
         font-size: 30px;
         color: rgb(0, 0, 0);
         text-align: center;

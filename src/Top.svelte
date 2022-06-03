@@ -28,8 +28,8 @@
         height: 160px;
         width: 320px;
         overflow: hidden;
-        font-family: "Lato", sans-serif;
         font-size: 20px;
+        font-family: "Righteous", cursive;
         line-height: 40px;
         color: #ecf0f1;
     }

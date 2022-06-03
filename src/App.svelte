@@ -37,11 +37,12 @@
 </script>
 
 <main>
-	<!--Nav Bar-->
+
+	<!--Nav Bar sticky-->
 	<div class="sticky">
 		<Nav />
 	</div>
-	<!--Nav Bar-->
+	<!--Nav Bar sticky-->
 
 	<Top />
 
@@ -70,6 +71,7 @@
 		</div>
 	{/if}
 	<!--set page mode-->
+
 </main>
 
 <style>

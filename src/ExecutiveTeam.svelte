@@ -1,11 +1,19 @@
 <script>
   import { Excutive } from "./Stores.js";
 
+  // Const Members
+  const M1 = $Excutive.CEO
+  const M2 = $Excutive.CMO
+  const M3 = $Excutive.CCO
+  const M4 = $Excutive.COO
+  const M5 = $Excutive.CTO
+
   AOS.init({
     offset: 400, // offset (in px) from the original trigger point
     delay: 0, // values from 0 to 3000, with step 50ms
     duration: 1000, // values from 0 to 3000, with step 50ms
   });
+
 </script>
 
 <header class="main-header">
@@ -17,81 +25,91 @@
 </header>
 
 <main class="container">
+  <!--Member 1-->
   <section id="card" class="mb-top">
     <img src="https://i.ibb.co/VvC0vpN/paint-1.png" alt="" />
     <div>
-      <h2>{$Excutive.CEO.nickname}</h2>
-      <h3>{$Excutive.CEO.name} {$Excutive.CEO.lastname}</h3>
-      <p>{$Excutive.CEO.position}</p>
-      <p>{$Excutive.CEO.university}</p>
-      <p>{$Excutive.CEO.faculty}</p>
-      <p>{$Excutive.CEO.major}</p>
+      <h2>{M1.nickname}</h2>
+      <h3>{M1.name} {M1.lastname}</h3>
+      <p>{M1.position}</p>
+      <p>{M1.university}</p>
+      <p>{M1.faculty}</p>
+      <p>{M1.major}</p>
       <br />
-      <p>{$Excutive.CEO.description}</p>
+      <p>{M1.description}</p>
     </div>
   </section>
+  <!--Member 1-->
 
+  <!--Member 2-->
   <section id="card" class="mb-bottom" data-aos="fade-left">
     <img src="https://i.ibb.co/3NHjDcW/paint-2.png" alt="" />
     <div>
-      <h2>{$Excutive.CMO.nickname}</h2>
-      <h3>{$Excutive.CMO.name} {$Excutive.CMO.lastname}</h3>
-      <p>{$Excutive.CMO.position}</p>
-      <p>{$Excutive.CMO.university}</p>
-      <p>{$Excutive.CMO.faculty}</p>
-      <p>{$Excutive.CMO.major}</p>
+      <h2>{M2.nickname}</h2>
+      <h3>{M2.name} {M2.lastname}</h3>
+      <p>{M2.position}</p>
+      <p>{M2.university}</p>
+      <p>{M2.faculty}</p>
+      <p>{M2.major}</p>
       <br />
-      <p>{$Excutive.CMO.description}</p>
+      <p>{M2.description}</p>
     </div>
   </section>
+  <!--Member 2-->
 
+  <!--Member 3-->
   <section id="card" class="mb-top" data-aos="fade-right">
     <img src="https://i.ibb.co/0VywMkW/paint-3.png" alt="" />
     <div>
-      <h2>{$Excutive.CCO.nickname}</h2>
-      <h3>{$Excutive.CCO.name} {$Excutive.CCO.lastname}</h3>
-      <p>{$Excutive.CCO.position}</p>
-      <p>{$Excutive.CCO.university}</p>
-      <p>{$Excutive.CCO.faculty}</p>
-      <p>{$Excutive.CCO.major}</p>
+      <h2>{M3.nickname}</h2>
+      <h3>{M3.name} {M3.lastname}</h3>
+      <p>{M3.position}</p>
+      <p>{M3.university}</p>
+      <p>{M3.faculty}</p>
+      <p>{M3.major}</p>
       <br />
-      <p>{$Excutive.CCO.description}</p>
+      <p>{M3.description}</p>
     </div>
   </section>
+  <!--Member 3-->
 
+  <!--Member 4-->
   <section id="card" class="mb-bottom" data-aos="fade-left">
     <img src="https://i.ibb.co/5LkJFRP/paint-4.png" alt="" />
     <div>
-      <h2>{$Excutive.COO.nickname}</h2>
-      <h3>{$Excutive.COO.name} {$Excutive.COO.lastname}</h3>
-      <p>{$Excutive.COO.position}</p>
-      <p>{$Excutive.COO.university}</p>
-      <p>{$Excutive.COO.faculty}</p>
-      <p>{$Excutive.COO.major}</p>
+      <h2>{M4.nickname}</h2>
+      <h3>{M4.name} {M4.lastname}</h3>
+      <p>{M4.position}</p>
+      <p>{M4.university}</p>
+      <p>{M4.faculty}</p>
+      <p>{M4.major}</p>
       <br />
-      <p>{$Excutive.COO.description}</p>
+      <p>{M4.description}</p>
     </div>
   </section>
+  <!--Member 4-->
 
+  <!--Member 5-->
   <section id="card" class="mb-top" data-aos="fade-right">
     <img src="https://i.ibb.co/61R8Q2y/paint-5.png" alt="" />
     <div>
-      <h2>{$Excutive.CTO.nickname}</h2>
-      <h3>{$Excutive.CTO.name} {$Excutive.CTO.lastname}</h3>
-      <p>{$Excutive.CTO.position}</p>
-      <p>{$Excutive.CTO.university}</p>
-      <p>{$Excutive.CTO.faculty}</p>
-      <p>{$Excutive.CTO.major}</p>
+      <h2>{M5.nickname}</h2>
+      <h3>{M5.name} {M5.lastname}</h3>
+      <p>{M5.position}</p>
+      <p>{M5.university}</p>
+      <p>{M5.faculty}</p>
+      <p>{M5.major}</p>
       <br />
-      <p>{$Excutive.CTO.description}</p>
+      <p>{M5.description}</p>
     </div>
   </section>
+  <!--Member 5-->
+
 </main>
 
 <style>
   main {
     font-size: 1.3rem;
-    font-family: "Oswald", sans-serif;
   }
 
   .container {

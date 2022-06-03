@@ -27,7 +27,7 @@ const Member = {
         nickname: "อาย",
         name: "กานต์พิชชา",
         lastname: "หงส์เอก",
-        position: "Chief creative officer",
+        position: "Chief Creative Officer",
         university: "Thammasart Universitity",
         faculty: "Faculty of Engineering",
         major: "Software engineering",
