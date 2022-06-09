@@ -3,11 +3,32 @@
     
     function setTo(page) {
         $mode = page;
-        document.getElementById("details-btn").style.border = "#EF8E44 solid 2px";
-        document.getElementById("home-btn").style.border = "none";
-        document.getElementById("contact-btn").style.border = "none";
-        document.getElementById("donate-btn").style.border = "none";
-        document.getElementById("subscribe-btn").style.border = "none";
+        if (page == "home") {
+      document.getElementById("home-btn").style.border = "#EF8E44 solid 2px";
+    } else {
+      document.getElementById("home-btn").style.border = "none";
+    }
+    if (page == "details") {
+      document.getElementById("details-btn").style.border = "#EF8E44 solid 2px";
+    } else {
+      document.getElementById("details-btn").style.border = "none";
+    }
+    if (page == "contact") {
+      document.getElementById("contact-btn").style.border = "#EF8E44 solid 2px";
+    } else {
+      document.getElementById("contact-btn").style.border = "none";
+    }
+    if (page == "donate") {
+      document.getElementById("donate-btn").style.border = "#EF8E44 solid 2px";
+    } else {
+      document.getElementById("donate-btn").style.border = "none";
+    }
+    if (page == "subscribe") {
+      document.getElementById("subscribe-btn").style.border = "#EF8E44 solid 2px";
+    } else {
+      document.getElementById("subscribe-btn").style.border = "none";
+    }
+
     }
 
 </script>
@@ -26,6 +47,7 @@
             </div>
             <div class="btns">
                 <button class="btns_more" on:click={() => setTo("details")}> See more </button>
+                <button class="btns_more" on:click={() => setTo("subscribe")}> Subscribe </button>
             </div>
         </div>
     </div>

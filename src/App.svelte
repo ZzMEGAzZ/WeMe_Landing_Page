@@ -50,7 +50,6 @@
 	{#if $mode == "home"}
 		<div id="home">
 			<Home_1 />
-			<Subscribe />
 		</div>
 	{:else if $mode == "details"}
 		<div id="details">
