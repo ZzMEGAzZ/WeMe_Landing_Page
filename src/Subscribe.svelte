@@ -23,7 +23,7 @@
     };
 </script>
 
-<!--Script src = https://script.google.com/macros/s/AKfycbxlZ5IZBp8DgChaEf0wnBr14OHaF6DylRJEeAkW5a8fzy5XcqvGIUWlnTvRnS_cuHCbag/exec -->
+<!--Script คำสั่ง ดึงข้อมูลไป Google Sheet = https://script.google.com/macros/s/AKfycbxlZ5IZBp8DgChaEf0wnBr14OHaF6DylRJEeAkW5a8fzy5XcqvGIUWlnTvRnS_cuHCbag/exec -->
 
 <main id="body">
     <p id="head">สมัครติดตามข่าวสาร</p>
@@ -38,7 +38,7 @@
                     type="text"
                     class="form-control"
                     id="name"
-                    placeholder="ชื่อ"
+                    placeholder="*ชื่อ"
                     name="ชื่อ"
                     required
                 />
@@ -46,7 +46,7 @@
                     type="text"
                     class="form-control"
                     id="lastname"
-                    placeholder="นามสกุล"
+                    placeholder="*นามสกุล"
                     name="นามสกุล"
                     required
                 />
@@ -62,7 +62,7 @@
                     type="email"
                     class="form-control"
                     id="email"
-                    placeholder="อีเมล"
+                    placeholder="*อีเมล"
                     name="Email"
                     required
                 />

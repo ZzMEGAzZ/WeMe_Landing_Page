@@ -34,17 +34,6 @@ const Member = {
         description: "XXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXX",
         img: "./img/aye.png"
     },
-    COO: {
-        nickname: "ต้น",
-        name: "ชิษณุพงศ์",
-        lastname: "เพ็งชัย",
-        position: "Chief Operating Officier",
-        university: "Thammasart Universitity",
-        faculty: "Faculty of Engineering",
-        major: "Software engineering",
-        description: "XXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXX",
-        img: "./img/ton.png"
-    },
     CTO: {
         nickname: "เมฆ",
         name: "อภิสิทธิ์",
@@ -55,7 +44,18 @@ const Member = {
         major: "Software engineering",
         description: "XXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXX",
         img: "./img/mek.png"
-    }
+    },
+    DEV: {
+        nickname: "ต้น",
+        name: "ชิษณุพงศ์",
+        lastname: "เพ็งชัย",
+        position: "Developer",
+        university: "Thammasart Universitity",
+        faculty: "Faculty of Engineering",
+        major: "Software engineering",
+        description: "XXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXX",
+        img: "./img/ton.png"
+    },
 };
 
 export const mode = writable("");

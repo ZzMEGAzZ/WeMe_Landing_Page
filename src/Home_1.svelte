@@ -4,31 +4,30 @@
     function setTo(page) {
         $mode = page;
         if (page == "home") {
-      document.getElementById("home-btn").style.border = "#EF8E44 solid 2px";
+      document.getElementById("home-btn").style.border = "#EF8E44 solid 4px";
     } else {
       document.getElementById("home-btn").style.border = "none";
     }
     if (page == "details") {
-      document.getElementById("details-btn").style.border = "#EF8E44 solid 2px";
+      document.getElementById("details-btn").style.border = "#EF8E44 solid 4px";
     } else {
       document.getElementById("details-btn").style.border = "none";
     }
     if (page == "contact") {
-      document.getElementById("contact-btn").style.border = "#EF8E44 solid 2px";
+      document.getElementById("contact-btn").style.border = "#EF8E44 solid 4px";
     } else {
       document.getElementById("contact-btn").style.border = "none";
     }
     if (page == "donate") {
-      document.getElementById("donate-btn").style.border = "#EF8E44 solid 2px";
+      document.getElementById("donate-btn").style.border = "#EF8E44 solid 4px";
     } else {
       document.getElementById("donate-btn").style.border = "none";
     }
     if (page == "subscribe") {
-      document.getElementById("subscribe-btn").style.border = "#EF8E44 solid 2px";
+      document.getElementById("subscribe-btn").style.border = "#EF8E44 solid 4px";
     } else {
       document.getElementById("subscribe-btn").style.border = "none";
     }
-
     }
 
 </script>
@@ -37,12 +36,12 @@
     <div class="container_content">
         <div class="container_content_inner">
             <div class="title">
-                <h1>WeMe</h1>
+                <h1 id="we">We</h1>
+                <h1 id="me">Me</h1>
             </div>
             <div class="par">
                 <p>
-                    You + Me = We <br />
-                    Wouldn't be me without you
+                    WeMe แอปพลิเคชันหาเพื่อนทำกิจกรรม หาเพื่อนเล่นกีฬา พร้อมโปรโมชันสุดพิเศษสำหรับคุณ
                 </p>
             </div>
             <div class="btns">
@@ -60,10 +59,6 @@
 <div class="overlay" />
 
 <style>
-    :root {
-        --secondary-color: #fff4ee;
-        --contrast-color: #68bde1;
-    }
     .overlay {
         position: absolute;
         top: 0;
@@ -72,19 +67,30 @@
         bottom: 0;
         height: 100vh;
         z-index: -10;
-        background-color: var(--contrast-color);
+        background-color: var(--secondary-color-orange);
     }
 
     .container {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        color: #ef8e44;
+        color: var(--content-color-orange);
         animation: expand 0.8s ease forwards;
-        background-color: var(--secondary-color);
+        background-color: white;
         position: relative;
-        font-family: "Righteous", cursive;
         transition: all 0.8s ease;
+    }
+
+    #we {
+        color: var(--primary-color-blue)
+    }
+
+    #me {
+        color: var(--primary-color-orange)
+    }
+
+    .title {
+        display: flex;
     }
 
     .container_content {
@@ -112,9 +118,13 @@
     }
 
     p {
+        margin: 10px;
+        word-break: break-word;
+        font-size: 1em;
         line-height: 28px;
         transform: translateY(300px);
         animation: slideUp 0.8s ease-in-out forwards 0.8s;
+        color: var(--content-color-gray);
     }
 
     .btns {
@@ -125,10 +135,10 @@
 
     .btns_more {
         background: transparent;
-        border: 1px solid var(--contrast-color);
+        border: 1px solid var(--primary-color-blue);
         border-radius: 50px;
         padding: 8px 12px;
-        color: #ef8e44;
+        color: var(--content-color-orange);
         font-size: 16px;
         text-transform: uppercase;
         position: relative;
@@ -144,8 +154,7 @@
     }
 
     h1 {
-        font-size: 40px;
-        color: var(--contrast-color);
+        font-size: 3em;
         margin-top: 20px;
         margin-bottom: 20px;
         transform: translateY(100px);
@@ -153,13 +162,21 @@
     }
 
     @media only screen and (min-width: 767px) {
+
+        h1 {
+            font-size: 5em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
         .container {
             width: 100%;
             height: 100vh;
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
-            background-color: var(--secondary-color);
+            background-color: white;
         }
 
         .container_content {

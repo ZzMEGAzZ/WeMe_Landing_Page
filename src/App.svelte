@@ -44,12 +44,11 @@
 	</div>
 	<!--Nav Bar sticky-->
 
-	<Top />
-
 	<!--set page mode-->
 	{#if $mode == "home"}
 		<div id="home">
 			<Home_1 />
+			<Subscribe />
 		</div>
 	{:else if $mode == "details"}
 		<div id="details">
@@ -75,6 +74,22 @@
 
 <style>
 	@import url("https://fonts.googleapis.com/css2?family=Mitr&family=Righteous&display=swap");
+
+	:root {
+        --primary-color-orange: #FF8022;
+        --primary-color-blue: #2BBFFF;
+		
+
+		--secondary-color-orange: #ffb67f;
+		--secondary-color-blue: #7ed8ff;
+
+		--content-color-orange: #ff6f00;
+		--content-color-blue: #00b3ff;
+
+		--primary-color-gray: #DFDFDF;
+		--content-color-gray: #7f7f7f;
+		--title-color-gray: #4e4e4e;
+    }
 	:global(body) {
 		overflow-x: hidden;
 		margin: 0;
