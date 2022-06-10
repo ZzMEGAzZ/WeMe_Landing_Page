@@ -84,7 +84,7 @@
 
 <style>
     main {
-        background-color: #f2f2f2;
+        background-color: white;
     }
     p#head {
         font-size: 30px;

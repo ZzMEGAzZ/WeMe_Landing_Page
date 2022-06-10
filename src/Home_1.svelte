@@ -4,27 +4,27 @@
     function setTo(page) {
         $mode = page;
         if (page == "home") {
-      document.getElementById("home-btn").style.border = "#EF8E44 solid 4px";
+      document.getElementById("home-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("home-btn").style.border = "none";
     }
     if (page == "details") {
-      document.getElementById("details-btn").style.border = "#EF8E44 solid 4px";
+      document.getElementById("details-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("details-btn").style.border = "none";
     }
     if (page == "contact") {
-      document.getElementById("contact-btn").style.border = "#EF8E44 solid 4px";
+      document.getElementById("contact-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("contact-btn").style.border = "none";
     }
     if (page == "donate") {
-      document.getElementById("donate-btn").style.border = "#EF8E44 solid 4px";
+      document.getElementById("donate-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("donate-btn").style.border = "none";
     }
     if (page == "subscribe") {
-      document.getElementById("subscribe-btn").style.border = "#EF8E44 solid 4px";
+      document.getElementById("subscribe-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("subscribe-btn").style.border = "none";
     }
@@ -146,6 +146,7 @@
         outline: none;
         transform: translateY(50px);
         animation: slideUp 0.8s ease-in-out forwards 1s;
+        cursor: pointer;
     }
 
     .title {

@@ -109,7 +109,7 @@
 
 <style>
   main {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   h1, h2, h3 {
     color: var(--title-color-gray);
@@ -164,6 +164,7 @@
     align-items: center;
     margin-bottom: 2rem;
     word-break: break-word;
+    background: #f1f1f1;
   }
 
   #card h3 {

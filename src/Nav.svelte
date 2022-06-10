@@ -4,27 +4,27 @@
   function setTo(page) {
     //set color of navbar
     if (page == "home") {
-      document.getElementById("home-btn").style.border = "#EF8E44 solid 4px";
+      document.getElementById("home-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("home-btn").style.border = "none";
     }
     if (page == "details") {
-      document.getElementById("details-btn").style.border = "#EF8E44 solid 4px";
+      document.getElementById("details-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("details-btn").style.border = "none";
     }
     if (page == "contact") {
-      document.getElementById("contact-btn").style.border = "#EF8E44 solid 4px";
+      document.getElementById("contact-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("contact-btn").style.border = "none";
     }
     if (page == "donate") {
-      document.getElementById("donate-btn").style.border = "#EF8E44 solid 4px";
+      document.getElementById("donate-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("donate-btn").style.border = "none";
     }
     if (page == "subscribe") {
-      document.getElementById("subscribe-btn").style.border = "#EF8E44 solid 4px";
+      document.getElementById("subscribe-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("subscribe-btn").style.border = "none";
     }
@@ -85,7 +85,7 @@
 <style>
 
   body {
-    background-color: white;
+    background-color: var(--primary-color-blue);
     overflow-x: unset;
   }
 
@@ -119,7 +119,7 @@
 
   .navbar .nav-container button {
     text-decoration: none;
-    color: var(--title-color-gray);
+    color: white;
     font-weight: 500;
     font-size: 1.2rem;
     padding: 0.3rem;
@@ -140,7 +140,7 @@
   }
 
   #home-btn {
-    border: var(--primary-color-orange) solid 4px;
+    border: white solid 4px;
   }
 
   .nav-container {
@@ -179,7 +179,7 @@
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: var(--primary-color-orange);
+    background: white;
   }
 
   .nav-container .hamburger-lines .line1 {
@@ -199,7 +199,7 @@
   .navbar .menu-items {
     padding-top: 120px;
     display: block;
-    background-color: white;
+    background-color: black;
     height: 100vh;
     width: 100vw;
     transform: translate(-150%);
@@ -242,7 +242,7 @@
 
     .navbar .menu-items {
       padding: 0px;
-      background-color: white;
+      background-color: var(--primary-color-blue);
       height: 0%;
       width: 100vw;
       display: flex;
