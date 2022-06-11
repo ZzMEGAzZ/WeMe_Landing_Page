@@ -165,6 +165,7 @@
     margin-bottom: 2rem;
     word-break: break-word;
     background: #f1f1f1;
+    border-radius: 20px;
   }
 
   #card h3 {
@@ -177,6 +178,7 @@
     aspect-ratio: 1/1.5;
     object-fit: cover;
     object-position: top center;
+    border-radius: 20px;
   }
 
   #card > div {

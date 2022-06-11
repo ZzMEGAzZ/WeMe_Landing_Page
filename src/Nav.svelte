@@ -48,7 +48,7 @@
         <div class="menu-items">
           <ul>
             <li>
-              <img src="img/Logo.png" alt="logo" width="100" />
+              <img src="img/White-Logo.png" alt="logo" width="100" />
             </li>
             <li>
               <button id="home-btn" on:click={() => setTo("home")}
@@ -87,6 +87,9 @@
   body {
     background-color: var(--primary-color-blue);
     overflow-x: unset;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   img {
@@ -106,7 +109,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 62px;
+    margin: 0;
+    width: 100vw;
   }
 
   .navbar .menu-items {
@@ -127,7 +131,7 @@
 
   .navbar .nav-container button:hover {
     font-weight: bolder;
-    color: var(--primary-color-blue);
+    color: var(--secondary-color-orange);
     transition: 0.1s;
     cursor: pointer;
   }
@@ -146,7 +150,7 @@
   .nav-container {
     display: block;
     position: relative;
-    height: 90px;
+    height: 60px;
   }
 
   .nav-container .checkbox {
@@ -155,7 +159,7 @@
     height: 32px;
     width: 32px;
     top: 20px;
-    left: 20px;
+    left: 40px;
     z-index: 5;
     opacity: 0;
     cursor: pointer;
@@ -166,12 +170,13 @@
     height: 26px;
     width: 32px;
     position: absolute;
-    top: 17px;
+    top: 7px;
     left: 20px;
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px 20px 10px 20px;
   }
 
   .nav-container .hamburger-lines .line {
@@ -199,7 +204,7 @@
   .navbar .menu-items {
     padding-top: 120px;
     display: block;
-    background-color: black;
+    background-color: var(--primary-color-blue);
     height: 100vh;
     width: 100vw;
     transform: translate(-150%);
@@ -240,6 +245,10 @@
       padding-left: 50px;
     }
 
+    .nav-container {
+      height: 90px;
+    }
+    
     .navbar .menu-items {
       padding: 0px;
       background-color: var(--primary-color-blue);

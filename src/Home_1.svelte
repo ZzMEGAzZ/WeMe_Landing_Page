@@ -67,7 +67,7 @@
         bottom: 0;
         height: 100vh;
         z-index: -10;
-        background-color: var(--secondary-color-orange);
+        background-color: white;
     }
 
     .container {
@@ -91,6 +91,9 @@
 
     .title {
         display: flex;
+        justify-content: center;
+        overflow: hidden;
+        height: auto;
     }
 
     .container_content {
@@ -118,7 +121,8 @@
     }
 
     p {
-        margin: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
         word-break: break-word;
         font-size: 1em;
         line-height: 28px;
@@ -149,11 +153,6 @@
         cursor: pointer;
     }
 
-    .title {
-        overflow: hidden;
-        height: auto;
-    }
-
     h1 {
         font-size: 3em;
         margin-top: 20px;
@@ -166,6 +165,10 @@
 
         h1 {
             font-size: 5em;
+        }
+
+        .title {
+            justify-content: flex-start;
         }
 
         p {
