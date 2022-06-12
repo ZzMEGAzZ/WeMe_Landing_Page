@@ -1,6 +1,6 @@
 <script>
     //commit from to script gooogle sheet
-    window.addEventListener("load", function () {
+    /*window.addEventListener("load", function () {
         const form = document.getElementById("my-Form");
         form.addEventListener("submit", function (e) {
             console.log("send data inprogress");
@@ -21,7 +21,7 @@
                 document.getElementById("my-Form").reset();
             });
         });
-    });
+    });*/
 </script>
 
 <p id="send-data">sending data in progress ...</p>
