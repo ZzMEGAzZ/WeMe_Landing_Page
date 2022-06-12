@@ -3,6 +3,7 @@
 	import { mode } from "./Stores.js";
 	import Top from "./Top.svelte";
 	import Home_1 from "./Home_1.svelte";
+	import Home_2 from "./Home_2.svelte";
 	import Nav from "./Nav.svelte";
 	import Details from "./Details.svelte";
 	import ExecutiveTeam from "./ExecutiveTeam.svelte";
@@ -37,19 +38,17 @@
 </script>
 
 <main>
-
 	<!--Nav Bar sticky-->
 	<div class="sticky">
 		<Nav />
 	</div>
 	<!--Nav Bar sticky-->
 
-	<Top />
-
 	<!--set page mode-->
 	{#if $mode == "home"}
 		<div id="home">
 			<Home_1 />
+			<Home_2 />
 			<Subscribe />
 		</div>
 	{:else if $mode == "details"}
@@ -71,21 +70,46 @@
 		</div>
 	{/if}
 	<!--set page mode-->
-
 </main>
 
 <style>
 	@import url("https://fonts.googleapis.com/css2?family=Mitr&family=Righteous&display=swap");
+
+	:root {
+		--primary-color-orange: #ff8022;
+		--primary-color-blue: #2bbfff;
+
+		--secondary-color-orange: #ffb67f;
+		--secondary-color-blue: #7ed8ff;
+
+		--content-color-orange: #ff6f00;
+		--content-color-blue: #00b3ff;
+
+		--primary-color-gray: #dfdfdf;
+		--content-color-gray: #7f7f7f;
+		--title-color-gray: #4e4e4e;
+	}
 	:global(body) {
 		overflow-x: hidden;
 		margin: 0;
 		padding: 0;
-		width: 100vw;
 		font-family: "Mitr", sans-serif;
+		width: 100vw;
 	}
 	.sticky {
 		position: sticky;
 		top: 0;
 		z-index: 100;
+	}
+
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	:global(body)::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Hide scrollbar for IE, Edge and Firefox */
+	:global(body) {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
 	}
 </style>

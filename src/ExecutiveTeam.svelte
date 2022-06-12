@@ -5,8 +5,8 @@
   const M1 = $Excutive.CEO
   const M2 = $Excutive.CMO
   const M3 = $Excutive.CCO
-  const M4 = $Excutive.COO
-  const M5 = $Excutive.CTO
+  const M4 = $Excutive.CTO
+  const M5 = $Excutive.DEV
 
   AOS.init({
     offset: 400, // offset (in px) from the original trigger point
@@ -111,6 +111,13 @@
   main {
     font-size: 1.3rem;
   }
+  h1, h2, h3 {
+    color: var(--title-color-gray);
+  }
+
+  p {
+    color: var(--content-color-gray);
+  }
 
   .container {
     max-width: 1100px;
@@ -136,16 +143,11 @@
   }
 
   .main-header h1 span {
-    color: #ef8e44;
+    color: var(--primary-color-orange);
   }
 
   .main-header p {
     font-size: 2rem;
-  }
-
-  img {
-    width: 300px;
-    padding: 10px;
   }
 
   .mb-top {
@@ -160,9 +162,10 @@
 
   #card {
     align-items: center;
-    background: #f1f1f1;
     margin-bottom: 2rem;
     word-break: break-word;
+    background: #f1f1f1;
+    border-radius: 20px;
   }
 
   #card h3 {
@@ -170,7 +173,12 @@
   }
 
   #card img {
-    height: 400px;
+    max-inline-size: 90%;
+    block-size: auto;
+    aspect-ratio: 1/1.5;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 20px;
   }
 
   #card > div {

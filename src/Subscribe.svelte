@@ -1,11 +1,10 @@
 <script>
-    //commit from to script gooogle sheet
-    /*window.addEventListener("load", function () {
+    function submitForm() {
         const form = document.getElementById("my-Form");
         form.addEventListener("submit", function (e) {
-            console.log("send data inprogress");
+            console.log("sending data in progress ...");
             document.getElementById("send-data").style.display = "block";
-            document.getElementById("body").style.display = "none";
+            document.getElementById("my-Form").style.display = "none";
             e.preventDefault();
             const data = new FormData(form);
             const action = e.target.action;
@@ -13,20 +12,18 @@
                 method: "POST",
                 body: data,
             }).then(() => {
-                console.log("send data success");
+                console.log("sending data successfully");
                 document.getElementById("send-data").style.display = "none";
-                document.getElementById("body").style.display = "block";
+                document.getElementById("send-data-success").style.display = "block";
                 alert("สมัครติดตามข่าวสารเรียบร้อยแล้ว");
                 //reset form
                 document.getElementById("my-Form").reset();
             });
         });
-    });*/
+    };
 </script>
 
-<p id="send-data">sending data in progress ...</p>
-
-<!--Script src = https://script.google.com/macros/s/AKfycbxlZ5IZBp8DgChaEf0wnBr14OHaF6DylRJEeAkW5a8fzy5XcqvGIUWlnTvRnS_cuHCbag/exec -->
+<!--Script คำสั่ง ดึงข้อมูลไป Google Sheet = https://script.google.com/macros/s/AKfycbxlZ5IZBp8DgChaEf0wnBr14OHaF6DylRJEeAkW5a8fzy5XcqvGIUWlnTvRnS_cuHCbag/exec -->
 
 <main id="body">
     <p id="head">สมัครติดตามข่าวสาร</p>
@@ -41,7 +38,7 @@
                     type="text"
                     class="form-control"
                     id="name"
-                    placeholder="ชื่อ"
+                    placeholder="*ชื่อ"
                     name="ชื่อ"
                     required
                 />
@@ -49,7 +46,7 @@
                     type="text"
                     class="form-control"
                     id="lastname"
-                    placeholder="นามสกุล"
+                    placeholder="*นามสกุล"
                     name="นามสกุล"
                     required
                 />
@@ -65,7 +62,7 @@
                     type="email"
                     class="form-control"
                     id="email"
-                    placeholder="อีเมล"
+                    placeholder="*อีเมล"
                     name="Email"
                     required
                 />
@@ -78,14 +75,16 @@
                     placeholder="สิ่งที่อยากจะบอกเรา"
                 />
             </div>
-            <button type="submit" value="Submit">สมัครรับข้อมูล</button>
+            <button type="submit" value="Submit" on:click={() => submitForm()}>สมัครรับข้อมูล</button>
         </form>
+        <p id="send-data">sending data in progress ...</p>
+        <p id="send-data-success">Thank you for subscribing</p>
     </div>
 </main>
 
 <style>
     main {
-        background-color: #f2f2f2;
+        background-color: white;
     }
     p#head {
         font-size: 30px;
@@ -133,7 +132,7 @@
         font-family: "Mitr", sans-serif;
         margin-top: 20px;
     }
-    #send-data {
+    #send-data, #send-data-success {
         text-align: center;
         font-family: "Mitr", sans-serif;
         font-size: 20px;

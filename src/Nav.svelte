@@ -4,27 +4,27 @@
   function setTo(page) {
     //set color of navbar
     if (page == "home") {
-      document.getElementById("home-btn").style.border = "#EF8E44 solid 2px";
+      document.getElementById("home-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("home-btn").style.border = "none";
     }
     if (page == "details") {
-      document.getElementById("details-btn").style.border = "#EF8E44 solid 2px";
+      document.getElementById("details-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("details-btn").style.border = "none";
     }
     if (page == "contact") {
-      document.getElementById("contact-btn").style.border = "#EF8E44 solid 2px";
+      document.getElementById("contact-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("contact-btn").style.border = "none";
     }
     if (page == "donate") {
-      document.getElementById("donate-btn").style.border = "#EF8E44 solid 2px";
+      document.getElementById("donate-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("donate-btn").style.border = "none";
     }
     if (page == "subscribe") {
-      document.getElementById("subscribe-btn").style.border = "#EF8E44 solid 2px";
+      document.getElementById("subscribe-btn").style.border = "white solid 4px";
     } else {
       document.getElementById("subscribe-btn").style.border = "none";
     }
@@ -48,7 +48,7 @@
         <div class="menu-items">
           <ul>
             <li>
-              <img src="img/Logo.png" alt="logo" width="100" />
+              <img src="img/White-Logo.png" alt="logo" width="100" />
             </li>
             <li>
               <button id="home-btn" on:click={() => setTo("home")}
@@ -83,9 +83,13 @@
 </body>
 
 <style>
+
   body {
-    background-color: black;
+    background-color: var(--primary-color-blue);
     overflow-x: unset;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   img {
@@ -105,7 +109,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 62px;
+    margin: 0;
+    width: 100vw;
   }
 
   .navbar .menu-items {
@@ -126,7 +131,7 @@
 
   .navbar .nav-container button:hover {
     font-weight: bolder;
-    color: #68bde1;
+    color: var(--secondary-color-orange);
     transition: 0.1s;
     cursor: pointer;
   }
@@ -139,13 +144,13 @@
   }
 
   #home-btn {
-    border: #ef8e44 solid 2px;
+    border: white solid 4px;
   }
 
   .nav-container {
     display: block;
     position: relative;
-    height: 90px;
+    height: 60px;
   }
 
   .nav-container .checkbox {
@@ -154,7 +159,7 @@
     height: 32px;
     width: 32px;
     top: 20px;
-    left: 20px;
+    left: 40px;
     z-index: 5;
     opacity: 0;
     cursor: pointer;
@@ -165,12 +170,13 @@
     height: 26px;
     width: 32px;
     position: absolute;
-    top: 17px;
+    top: 7px;
     left: 20px;
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px 20px 10px 20px;
   }
 
   .nav-container .hamburger-lines .line {
@@ -178,7 +184,7 @@
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: #ef8e44;
+    background: white;
   }
 
   .nav-container .hamburger-lines .line1 {
@@ -198,7 +204,7 @@
   .navbar .menu-items {
     padding-top: 120px;
     display: block;
-    background-color: black;
+    background-color: var(--primary-color-blue);
     height: 100vh;
     width: 100vw;
     transform: translate(-150%);
@@ -239,9 +245,13 @@
       padding-left: 50px;
     }
 
+    .nav-container {
+      height: 90px;
+    }
+    
     .navbar .menu-items {
       padding: 0px;
-      background-color: black;
+      background-color: var(--primary-color-blue);
       height: 0%;
       width: 100vw;
       display: flex;

@@ -13,12 +13,11 @@
 </body>
 
 <style>
-    @import url(https://fonts.googleapis.com/css?family=Lato);
     body {
         width: 100%;
         height: 50px;
         overflow: hidden;
-        background-color: #000000;
+        background-color: white;
     }
     .content {
         position: absolute;
@@ -31,7 +30,7 @@
         font-size: 20px;
         font-family: "Righteous", cursive;
         line-height: 40px;
-        color: #ecf0f1;
+        color: var(--content-color-blue);
     }
     .content__container {
         font-weight: 600;
@@ -52,7 +51,7 @@
     .content__container:before {
         position: absolute;
         top: 0;
-        color: #68bde1;
+        color: var(--primary-color-blue);
         font-size: 42px;
         line-height: 40px;
         -webkit-animation-name: opacity;
@@ -66,7 +65,7 @@
         display: inline;
         float: left;
         margin: 0;
-        color: #ef8e44;
+        color: var(--primary-color-orange);
     }
     .content__container__list {
         margin-top: 0;
