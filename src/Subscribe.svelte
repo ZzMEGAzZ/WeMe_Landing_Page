@@ -1,5 +1,18 @@
 <script>
+
+
+
     function submitForm() {
+
+        var name = document.forms[my-Form][name].value;
+        var last = document.forms[my-Form][lastname].value;
+        var age = document.forms[my-Form][age].value;
+        var email = document.forms[my-Form][email].value;
+
+        if(name =="" || last ==""|| age ==""|| email==""){
+            return False;
+        }
+        else{
         const form = document.getElementById("my-Form");
         form.addEventListener("submit", function (e) {
             console.log("sending data in progress ...");
@@ -20,6 +33,7 @@
                 document.getElementById("my-Form").reset();
             });
         });
+        };
     };
 </script>
 
@@ -29,6 +43,7 @@
     <p id="head">สมัครติดตามข่าวสาร</p>
     <div id="container">
         <form
+            name="my-Form"
             id="my-Form"
             method="POST"
             action="https://script.google.com/macros/s/AKfycbxlZ5IZBp8DgChaEf0wnBr14OHaF6DylRJEeAkW5a8fzy5XcqvGIUWlnTvRnS_cuHCbag/exec"
@@ -39,7 +54,7 @@
                     class="form-control"
                     id="name"
                     placeholder="*ชื่อ"
-                    name="ชื่อ"
+                    name="name"
                     required
                 />
                 <input
@@ -47,7 +62,7 @@
                     class="form-control"
                     id="lastname"
                     placeholder="*นามสกุล"
-                    name="นามสกุล"
+                    name="lastname"
                     required
                 />
                 <input
@@ -56,15 +71,16 @@
                     class="form-control"
                     id="age"
                     placeholder="อายุ"
-                    name="อายุ"
+                    name="age"
+                    required
                 />
                 <input
                     type="email"
                     class="form-control"
                     id="email"
                     placeholder="*อีเมล"
-                    name="Email"
-                    required
+                    name="email"
+                    
                 />
             </div>
             <div id="etc-box" class="form-group">
