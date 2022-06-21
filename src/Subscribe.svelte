@@ -1,36 +1,39 @@
 <script>
 
+    function validate() {
+        var name_v = document.forms["my-Form"]["name"].value;
+        var last_v = document.forms["my-Form"]["lastname"].value;
+        var age_v = document.forms["my-Form"]["age"].value;
+        var email_v = document.forms["my-Form"]["email"].value;
 
+        if(name_v =="" || last_v ==""|| age_v ==""|| email_v==""){
+            alert("please fill all information");
+            return false;
+        }
+        return true;
+    }
 
     function submitForm() {
 
-        var name = document.forms[my-Form][name].value;
-        var last = document.forms[my-Form][lastname].value;
-        var age = document.forms[my-Form][age].value;
-        var email = document.forms[my-Form][email].value;
-
-        if(name =="" || last ==""|| age ==""|| email==""){
-            return False;
-        }
-        else{
-        const form = document.getElementById("my-Form");
-        form.addEventListener("submit", function (e) {
-            console.log("sending data in progress ...");
-            document.getElementById("send-data").style.display = "block";
-            document.getElementById("my-Form").style.display = "none";
-            e.preventDefault();
-            const data = new FormData(form);
-            const action = e.target.action;
-            fetch(action, {
-                method: "POST",
-                body: data,
-            }).then(() => {
-                console.log("sending data successfully");
-                document.getElementById("send-data").style.display = "none";
-                document.getElementById("send-data-success").style.display = "block";
-                alert("สมัครติดตามข่าวสารเรียบร้อยแล้ว");
-                //reset form
-                document.getElementById("my-Form").reset();
+        if(validate()){          
+            const form = document.getElementById("my-Form");
+            form.addEventListener("submit", function (e) {
+                console.log("sending data in progress ...");
+                document.getElementById("send-data").style.display = "block";
+                document.getElementById("my-Form").style.display = "none";
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                    method: "POST",
+                    body: data,
+                }).then(() => {
+                    console.log("sending data successfully");
+                    document.getElementById("send-data").style.display = "none";
+                    document.getElementById("send-data-success").style.display = "block";
+                    alert("สมัครติดตามข่าวสารเรียบร้อยแล้ว");
+                    //reset form
+                    document.getElementById("my-Form").reset();
             });
         });
         };
@@ -80,6 +83,7 @@
                     id="email"
                     placeholder="*อีเมล"
                     name="email"
+                    required
                     
                 />
             </div>
