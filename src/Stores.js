@@ -67,6 +67,17 @@ const Member = {
         description: "XXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXX",
         img: "./img/oat.png"
     },
+    DEV_3: {
+        nickname: "เนย",
+        name: "ฐิติชญา",
+        lastname: "พวงเหล่าเวช",
+        position: "Developer",
+        university: "Thammasart Universitity",
+        faculty: "Faculty of Engineering",
+        major: "Software engineering",
+        description: "XXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXX",
+        img: "./img/noey.png"
+    },
 };
 
 export const mode = writable("");

@@ -43,6 +43,10 @@
 <!--Script คำสั่ง ดึงข้อมูลไป Google Sheet = https://script.google.com/macros/s/AKfycbxlZ5IZBp8DgChaEf0wnBr14OHaF6DylRJEeAkW5a8fzy5XcqvGIUWlnTvRnS_cuHCbag/exec -->
 
 <main id="body">
+    <h1 id="caution">ลงทะเบียนติดตาม ข่าวสารตอนนี้!</h1>
+    <p>
+        เพื่อพัฒนาแอปพลิเคชันต่อไปข้อมูลของคุณจะถูกจัดเก็บเพื่อยืนยันกับแหล่งทุนว่ามีผู้คนสนใจจริงโดยจะไม่ถูกเปิดเผยสู่สาธารณะโดยเด็ดขาด
+    </p>
     <p id="head">สมัครติดตามข่าวสาร</p>
     <div id="container">
         <form
@@ -97,6 +101,7 @@
             </div>
             <button type="submit" value="Submit" on:click={() => submitForm()}>สมัครรับข้อมูล</button>
         </form>
+
         <p id="send-data">sending data in progress ...</p>
         <p id="send-data-success">Thank you for subscribing</p>
     </div>
@@ -104,13 +109,26 @@
 
 <style>
     main {
-        background-color: white;
+        margin: 0 auto;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        background-color: var(--title-color-gray);
+        color: white;
     }
+
+    #caution {
+        margin: 10px 0;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--primary-color-orange);
+    }
+
     p#head {
         font-size: 30px;
-        color: rgb(0, 0, 0);
+        color: white;
         text-align: center;
-        margin: 0;
+        margin: 0 20px;
     }
     #container {
         width: 100vw;

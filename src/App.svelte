@@ -1,7 +1,7 @@
 <script>
 	//import app element
 	import { mode } from "./Stores.js";
-	import Top from "./Top.svelte";
+	import Animate from "./Animate.svelte";
 	import Home_1 from "./Home_1.svelte";
 	import Home_2 from "./Home_2.svelte";
 	import Nav from "./Nav.svelte";
@@ -58,7 +58,6 @@
 	{:else if $mode == "contact"}
 		<div id="contact">
 			<ExecutiveTeam />
-			<Contact />
 		</div>
 	{:else if $mode == "donate"}
 		<div id="donate">
@@ -67,6 +66,7 @@
 	{:else if $mode == "subscribe"}
 		<div id="subscribe">
 			<Subscribe />
+			<Contact />
 		</div>
 	{/if}
 	<!--set page mode-->

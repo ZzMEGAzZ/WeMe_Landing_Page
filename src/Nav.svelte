@@ -25,8 +25,10 @@
     }
     if (page == "subscribe") {
       document.getElementById("subscribe-btn").style.border = "white solid 4px";
+      document.getElementById("main").style.backgroundColor = "var(--title-color-gray)";
     } else {
       document.getElementById("subscribe-btn").style.border = "none";
+      document.getElementById("main").style.backgroundColor = "transparent";
     }
 
     //set mode
@@ -35,7 +37,7 @@
   }
 </script>
 
-<body>
+<main id="main">
   <nav>
     <div class="navbar">
       <div class="container nav-container">
@@ -80,11 +82,14 @@
       </div>
     </div>
   </nav>
-</body>
+</main>
 
 <style>
 
-  body {
+  main {
+    background-color: transparent;
+  }
+  nav {
     background-color: var(--primary-color-blue);
     overflow-x: unset;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);

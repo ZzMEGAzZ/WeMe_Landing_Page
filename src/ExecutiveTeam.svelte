@@ -8,6 +8,7 @@
   const M4 = $Excutive.CTO
   const M5 = $Excutive.DEV_1
   const M6 = $Excutive.DEV_2
+  const M7 = $Excutive.DEV_3
 
   AOS.init({
     offset: 400, // offset (in px) from the original trigger point
@@ -121,6 +122,21 @@
     </div>
   </section>
   <!--Member 6-->
+
+  <!--Member 7-->
+  <section id="card" class="mb-top" data-aos="fade-right">
+    <img src="https://i.ibb.co/61R8Q2y/paint-5.png" alt="" />
+    <div>
+      <h2>{M7.nickname}</h2>
+      <h3>{M7.name} {M7.lastname}</h3>
+      <p>{M7.position}</p>
+      <p>{M7.university}</p>
+      <p>{M7.faculty}</p>
+      <p>{M7.major}</p>
+      <br />
+      <p>{M7.description}</p>
+    </div>
+  </section>
 
 </main>
 
