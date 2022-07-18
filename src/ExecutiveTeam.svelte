@@ -112,7 +112,7 @@
     <img src="https://i.ibb.co/61R8Q2y/paint-5.png" alt="" />
     <div>
       <h2>{M6.nickname}</h2>
-      <h3>{M6.name} {M5.lastname}</h3>
+      <h3>{M6.name} {M6.lastname}</h3>
       <p>{M6.position}</p>
       <p>{M6.university}</p>
       <p>{M6.faculty}</p>
