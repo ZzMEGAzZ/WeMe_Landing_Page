@@ -78,15 +78,15 @@
 	:root {
 		--primary-color-orange: #ff8022;
 		--primary-color-blue: #2bbfff;
+		--primary-color-gray: #dfdfdf;
 
 		--secondary-color-orange: #ffb67f;
 		--secondary-color-blue: #7ed8ff;
 
 		--content-color-orange: #ff6f00;
 		--content-color-blue: #00b3ff;
-
-		--primary-color-gray: #dfdfdf;
 		--content-color-gray: #7f7f7f;
+		
 		--title-color-gray: #4e4e4e;
 	}
 	:global(body) {
