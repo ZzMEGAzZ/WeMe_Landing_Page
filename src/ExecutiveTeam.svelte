@@ -137,6 +137,7 @@
       <p>{M7.description}</p>
     </div>
   </section>
+  <!--Member 7-->
 
 </main>
 

@@ -35,26 +35,26 @@ const Member = {
         img: "./img/aye.png"
     },
     CTO: {
-        nickname: "ต้น",
-        name: "ชิษณุพงศ์",
-        lastname: "เพ็งชัย",
+        nickname: "เมฆ",
+        name: "อภิสิทธิ์",
+        lastname: "แสงกระจ่าง",
         position: "Chief Technology Officer",
         university: "Thammasart Universitity",
         faculty: "Faculty of Engineering",
         major: "Software engineering",
         description: "XXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXX",
-        img: "./img/ton.png"
+        img: "./img/mek.png"
     },
     DEV_1: {
-        nickname: "เมฆ",
-        name: "อภิสิทธิ์",
-        lastname: "แสงกระจ่าง",
+        nickname: "ต้น",
+        name: "ชิษณุพงศ์",
+        lastname: "เพ็งชัย",
         position: "Developer",
         university: "Thammasart Universitity",
         faculty: "Faculty of Engineering",
         major: "Software engineering",
         description: "XXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXX",
-        img: "./img/mek.png"
+        img: "./img/ton.png"
     },
     DEV_2: {
         nickname: "โอ๊ต",
