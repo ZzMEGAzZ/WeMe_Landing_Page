@@ -28,6 +28,11 @@
     } else {
       document.getElementById("subscribe-btn").style.border = "none";
     }
+    if (page == "donate" || page == "subscribe") {
+      document.getElementById("main").style.backgroundColor = "var(--title-color-gray)";
+    } else {
+      document.getElementById("main").style.backgroundColor = "transparent";
+    }
     }
 
 </script>
