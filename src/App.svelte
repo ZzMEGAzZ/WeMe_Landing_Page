@@ -62,6 +62,7 @@
 	{:else if $mode == "donate"}
 		<div id="donate">
 			<Donate />
+			<Subscribe />
 		</div>
 	{:else if $mode == "subscribe"}
 		<div id="subscribe">

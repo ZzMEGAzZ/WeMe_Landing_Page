@@ -25,9 +25,12 @@
     }
     if (page == "subscribe") {
       document.getElementById("subscribe-btn").style.border = "white solid 4px";
-      document.getElementById("main").style.backgroundColor = "var(--title-color-gray)";
     } else {
       document.getElementById("subscribe-btn").style.border = "none";
+    }
+    if (page == "donate" || page == "subscribe") {
+      document.getElementById("main").style.backgroundColor = "var(--title-color-gray)";
+    } else {
       document.getElementById("main").style.backgroundColor = "transparent";
     }
 
@@ -64,7 +67,7 @@
             </li>
             <li>
               <button id="contact-btn" on:click={() => setTo("contact")}
-                >ติดต่อเรา</button
+                >ทีมของเรา</button
               >
             </li>
             <li>
@@ -242,9 +245,6 @@
   }
 
   @media only screen and (min-width: 767px) {
-    body {
-      overflow: hidden;
-    }
     ul {
       display: flex;
       padding-left: 50px;

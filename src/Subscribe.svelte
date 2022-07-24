@@ -45,7 +45,7 @@
 <main id="body">
     <h1 id="caution">ลงทะเบียนติดตาม ข่าวสารตอนนี้!</h1>
     <p>
-        เพื่อพัฒนาแอปพลิเคชันต่อไปข้อมูลของคุณจะถูกจัดเก็บเพื่อยืนยันกับแหล่งทุนว่ามีผู้คนสนใจจริงโดยจะไม่ถูกเปิดเผยสู่สาธารณะโดยเด็ดขาด
+        เพื่อพัฒนาแอปพลิเคชันต่อไป ข้อมูลของคุณจะถูกจัดเก็บเพื่อยืนยันกับแหล่งทุน ว่ามีผู้คนสนใจจริงโดยจะไม่ถูกเปิดเผยสู่สาธารณะโดยเด็ดขาด
     </p>
     <p id="head">สมัครติดตามข่าวสาร</p>
     <div id="container">
@@ -151,7 +151,7 @@
         flex-direction: column;
     }
     textarea {
-        resize: both;
+        resize: vertical;
         min-width: 200px;
         min-height: 200px;
         max-width: 300px;
@@ -164,7 +164,7 @@
     }
     button {
         border-radius: 20px;
-        background-color: rgb(0, 0, 0);
+        background-color: var(--primary-color-orange);
         color: rgb(255, 255, 255);
         font-size: 20px;
         font-family: "Mitr", sans-serif;
@@ -188,6 +188,7 @@
         }
 
         textarea {
+            resize: horizontal;
             margin-left: 20px;
             margin-right: 20px;
         }
