@@ -3,7 +3,7 @@
     function validate() {
         var name_v = document.forms["my-Form"]["name"].value;
         var last_v = document.forms["my-Form"]["lastname"].value;
-        var age_v = document.forms["my-Form"]["age"].value;
+        // var age_v = document.forms["my-Form"]["age"].value;
         var email_v = document.forms["my-Form"]["email"].value;
 
         if(name_v =="" || last_v ==""|| age_v ==""|| email_v==""){
