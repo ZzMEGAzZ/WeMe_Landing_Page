@@ -79,7 +79,6 @@
                     id="age"
                     placeholder="อายุ"
                     name="age"
-                    required
                 />
                 <input
                     type="email"
