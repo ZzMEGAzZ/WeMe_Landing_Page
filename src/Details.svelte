@@ -65,10 +65,11 @@
 </main>
 
 <style>
+
   main {
     font-size: 1.3rem;
   }
-  h1, h2, h3 {
+  h1 {
     color: var(--title-color-gray);
   }
 

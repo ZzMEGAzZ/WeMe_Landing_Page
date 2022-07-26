@@ -3,12 +3,12 @@
     <div class="container">
         <section id="IG" class="social">
             <p>Instragram</p>
-            <img src="img/IG-QR-Code.png" alt="QR-Payment" />
+            <img src="img/IG-QR-Code.png" alt="" />
         </section>
     
         <section id="FB" class="social">
             <p>Facebook</p>
-            <img src="img/IG-QR-Code.png" alt="QR-Payment" />
+            <img src="img/IG-QR-Code.png" alt="" />
         </section>
     </div>
     

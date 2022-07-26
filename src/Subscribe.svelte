@@ -108,8 +108,8 @@
 
 <style>
     main {
-        margin: 0 auto;
-        padding: 10px;
+        margin: 0;
+        padding: 0;
         width: 100%;
         text-align: center;
         background-color: var(--title-color-gray);
@@ -117,7 +117,8 @@
     }
 
     #caution {
-        margin: 10px 0;
+        padding: 10px;
+        margin: 0;
         font-size: 2.5rem;
         font-weight: bold;
         color: var(--primary-color-orange);
@@ -175,6 +176,11 @@
         font-size: 20px;
         color: rgb(0, 0, 0);
         display: none;
+    }
+
+    p {
+        padding: 20px;
+        word-break: break-word;
     }
     @media only screen and (min-width: 767px) {
         #container {

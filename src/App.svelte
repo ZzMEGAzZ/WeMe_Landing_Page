@@ -10,6 +10,7 @@
 	import Contact from "./Contact.svelte";
 	import Donate from "./Donate.svelte";
 	import Subscribe from "./Subscribe.svelte";
+	import Footer from "./Footer.svelte";
 
 	// Import the functions you need from the SDKs you need
 	import { initializeApp } from "firebase/app";
@@ -43,35 +44,41 @@
 		<Nav />
 	</div>
 	<!--Nav Bar sticky-->
-
-	<!--set page mode-->
-	{#if $mode == "home"}
-		<div id="home">
-			<Home_1 />
-			<Home_2 />
-			<Subscribe />
+	<div id="container">
+		<!--set page mode-->
+		<div id="content">
+			{#if $mode == "home"}
+				<div id="home">
+					<Home_1 />
+					<Home_2 />
+					<Subscribe />
+				</div>
+			{:else if $mode == "details"}
+				<div id="details">
+					<Details />
+				</div>
+			{:else if $mode == "contact"}
+				<div id="contact">
+					<ExecutiveTeam />
+				</div>
+			{:else if $mode == "donate"}
+				<div id="donate">
+					<Donate />
+					<Subscribe />
+				</div>
+			{:else if $mode == "subscribe"}
+				<div id="subscribe">
+					<Subscribe />
+					<Contact />
+				</div>
+			{/if}
 		</div>
-	{:else if $mode == "details"}
-		<div id="details">
-			<Details />
-		</div>
-	{:else if $mode == "contact"}
-		<div id="contact">
-			<ExecutiveTeam />
-		</div>
-	{:else if $mode == "donate"}
-		<div id="donate">
-			<Donate />
-			<Subscribe />
-		</div>
-	{:else if $mode == "subscribe"}
-		<div id="subscribe">
-			<Subscribe />
-			<Contact />
-		</div>
-	{/if}
-	<!--set page mode-->
+	</div>
 </main>
+
+<div id="footer">
+	<Footer />
+</div>
 
 <style>
 	@import url("https://fonts.googleapis.com/css2?family=Mitr&family=Righteous&display=swap");
@@ -87,7 +94,7 @@
 		--content-color-orange: #ff6f00;
 		--content-color-blue: #00b3ff;
 		--content-color-gray: #7f7f7f;
-		
+
 		--title-color-gray: #4e4e4e;
 	}
 	:global(body) {
@@ -97,10 +104,20 @@
 		font-family: "Mitr", sans-serif;
 		width: 100vw;
 	}
+	#container {
+		position: relative;
+		min-height: 100vh;
+		background-color: var(--title-color-gray);
+	}
+
 	.sticky {
 		position: sticky;
 		top: 0;
 		z-index: 100;
+	}
+
+	#content {
+		background-color: white;
 	}
 
 	/* Hide scrollbar for Chrome, Safari and Opera */
