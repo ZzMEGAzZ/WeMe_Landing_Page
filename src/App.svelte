@@ -3,7 +3,6 @@
 	import { mode } from "./Stores.js";
 	import Animate from "./Animate.svelte";
 	import Home_1 from "./Home_1.svelte";
-	import Home_2 from "./Home_2.svelte";
 	import Nav from "./Nav.svelte";
 	import Details from "./Details.svelte";
 	import ExecutiveTeam from "./ExecutiveTeam.svelte";
@@ -35,7 +34,7 @@
 	const analytics = getAnalytics(app);
 
 	// Set mode
-	$mode = "home";
+	$mode = "details";
 </script>
 
 <main>
@@ -48,13 +47,13 @@
 		<!--set page mode-->
 		<div id="content">
 			{#if $mode == "home"}
+			<Home_1 />
 				<div id="home">
-					<Home_1 />
-					<Home_2 />
 					<Subscribe />
 				</div>
 			{:else if $mode == "details"}
 				<div id="details">
+					<Animate />
 					<Details />
 				</div>
 			{:else if $mode == "contact"}

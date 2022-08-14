@@ -1,160 +1,314 @@
 <script>
-  AOS.init({
-    offset: 100, // offset (in px) from the original trigger point
-    delay: 0, // values from 0 to 3000, with step 50ms
-    duration: 1000, // values from 0 to 3000, with step 50ms
-  });
+  import Saos from "saos";
 </script>
 
-<header class="main-header">
-  <h1><span>WeMe</span></h1>
-  <p>
-    WeMe แอปพลิเคชันหาเพื่อนทำกิจกรรม หาเพื่อนเล่นกีฬา พร้อมโปรโมชันสุดพิเศษสำหรับคุณ
-  </p>
-</header>
+<main>
+  <Saos
+    animation={"fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"}
+    animation_out={"fade-out 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"}
+    top={250}
+    bottom={250}
+  >
+    <section id="card1" class="card-odd">
+      <section class="reveal">
+        <div class="img-container">
+          <img src="./img/Logo.png" alt="weme" />
+        </div>
+        <div class="content">
+          <h2>Heading One</h2>
+          <h3>Sub-Header</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            sagittis sapien justo, ac mattis quam euismod non. Donec facilisis
+            ultricies sapien nec faucibus. Morbi lacinia blandit ligula et
+            sagittis. Suspendisse a commodo augue, eu tristique lectus. Donec a
+            condimentum dolor. Nullam quis sapien sit amet nisi bibendum
+            accumsan. Sed odio felis, interdum eget justo ac, pellentesque
+            sodales nibh. Cras malesuada felis sed nunc suscipit, et maximus
+            augue molestie. Integer pretium vehicula nisi.
+          </p>
+        </div>
+      </section>
+    </section>
+  </Saos>
 
-<main class="container">
-  <!--Card 1-->
-  <section id="card" class="mb-top">
-    <div>
-      <p>หาเพื่อนเล่นกีฬา</p>
-    </div>
-  </section>
-  <!--Card 1-->
+  <Saos
+    animation={"fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"}
+    animation_out={"fade-out 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"}
+    top={250}
+    bottom={250}
+  >
+    <section id="card2" class="card-even">
+      <section class="reveal">
+        <div class="content">
+          <h2>Heading One</h2>
+          <h3>Sub-Header</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            sagittis sapien justo, ac mattis quam euismod non. Donec facilisis
+            ultricies sapien nec faucibus. Morbi lacinia blandit ligula et
+            sagittis. Suspendisse a commodo augue, eu tristique lectus. Donec a
+            condimentum dolor. Nullam quis sapien sit amet nisi bibendum
+            accumsan. Sed odio felis, interdum eget justo ac, pellentesque
+            sodales nibh. Cras malesuada felis sed nunc suscipit, et maximus
+            augue molestie. Integer pretium vehicula nisi.
+          </p>
+        </div>
+        <div class="img-container">
+          <img src="./img/Logo.png" alt="weme" />
+        </div>
+      </section>
+    </section>
+  </Saos>
 
-  <!--Card 2-->
-  <section id="card" class="mb-bottom" data-aos="fade-left">
-    <div>
-      <p>หาเพื่อนเล่นกีฬา</p>
-    </div>
-  </section>
-  <!--Card 2-->
+  <Saos
+    animation={"fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"}
+    animation_out={"fade-out 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"}
+    top={250}
+    bottom={250}
+  >
+    <section id="card3" class="card-odd">
+      <section class="reveal">
+        <div class="img-container">
+          <img src="./img/Logo.png" alt="weme" />
+        </div>
+        <div class="content">
+          <h2>Heading One</h2>
+          <h3>Sub-Header</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            sagittis sapien justo, ac mattis quam euismod non. Donec facilisis
+            ultricies sapien nec faucibus. Morbi lacinia blandit ligula et
+            sagittis. Suspendisse a commodo augue, eu tristique lectus. Donec a
+            condimentum dolor. Nullam quis sapien sit amet nisi bibendum
+            accumsan. Sed odio felis, interdum eget justo ac, pellentesque
+            sodales nibh. Cras malesuada felis sed nunc suscipit, et maximus
+            augue molestie. Integer pretium vehicula nisi.
+          </p>
+        </div>
+      </section>
+    </section>
+  </Saos>
 
-  <!--Card 3-->
-  <section id="card" class="mb-top" data-aos="fade-right">
-    <div>
-      <p>หาเพื่อนเล่นกีฬา</p>
-    </div>
-  </section>
-  <!--Card 3-->
+  <Saos
+    animation={"fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"}
+    animation_out={"fade-out 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"}
+    top={250}
+    bottom={250}
+  >
+    <section id="card2" class="card-even">
+      <section class="reveal">
+        <div class="content">
+          <h2>Heading One</h2>
+          <h3>Sub-Header</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            sagittis sapien justo, ac mattis quam euismod non. Donec facilisis
+            ultricies sapien nec faucibus. Morbi lacinia blandit ligula et
+            sagittis. Suspendisse a commodo augue, eu tristique lectus. Donec a
+            condimentum dolor. Nullam quis sapien sit amet nisi bibendum
+            accumsan. Sed odio felis, interdum eget justo ac, pellentesque
+            sodales nibh. Cras malesuada felis sed nunc suscipit, et maximus
+            augue molestie. Integer pretium vehicula nisi.
+          </p>
+        </div>
+        <div class="img-container">
+          <img src="./img/Logo.png" alt="weme" />
+        </div>
+      </section>
+    </section>
+  </Saos>
 
-  <!--Card 4-->
-  <section id="card" class="mb-bottom" data-aos="fade-left">
-    <div>
-      <p>หาเพื่อนเล่นกีฬา</p>
-    </div>
-  </section>
-  <!--Card 4-->
+  <Saos
+    animation={"fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"}
+    animation_out={"fade-out 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"}
+    top={250}
+    bottom={250}
+  >
+    <section id="card1" class="card-odd">
+      <section class="reveal">
+        <div class="img-container">
+          <img src="./img/Logo.png" alt="weme" />
+        </div>
+        <div class="content">
+          <h2>Heading One</h2>
+          <h3>Sub-Header</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            sagittis sapien justo, ac mattis quam euismod non. Donec facilisis
+            ultricies sapien nec faucibus. Morbi lacinia blandit ligula et
+            sagittis. Suspendisse a commodo augue, eu tristique lectus. Donec a
+            condimentum dolor. Nullam quis sapien sit amet nisi bibendum
+            accumsan. Sed odio felis, interdum eget justo ac, pellentesque
+            sodales nibh. Cras malesuada felis sed nunc suscipit, et maximus
+            augue molestie. Integer pretium vehicula nisi.
+          </p>
+        </div>
+      </section>
+    </section>
+  </Saos>
 
-  <!--Card 5-->
-  <section id="card" class="mb-top" data-aos="fade-right">
-    <div>
-      <p>หาเพื่อนเล่นกีฬา</p>
-    </div>
-  </section>
-  <!--Card 5-->
+  <Saos
+    animation={"fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"}
+    animation_out={"fade-out 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"}
+    top={250}
+    bottom={250}
+  >
+    <section id="card2" class="card-even">
+      <section class="reveal">
+        <div class="content">
+          <h2>Heading One</h2>
+          <h3>Sub-Header</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            sagittis sapien justo, ac mattis quam euismod non. Donec facilisis
+            ultricies sapien nec faucibus. Morbi lacinia blandit ligula et
+            sagittis. Suspendisse a commodo augue, eu tristique lectus. Donec a
+            condimentum dolor. Nullam quis sapien sit amet nisi bibendum
+            accumsan. Sed odio felis, interdum eget justo ac, pellentesque
+            sodales nibh. Cras malesuada felis sed nunc suscipit, et maximus
+            augue molestie. Integer pretium vehicula nisi.
+          </p>
+        </div>
+        <div class="img-container">
+          <img src="./img/Logo.png" alt="weme" />
+        </div>
+      </section>
+    </section>
+  </Saos>
 
-  <!--Card 6-->
-  <section id="card" class="mb-bottom" data-aos="fade-left">
-    <div>
-      <p>หาเพื่อนเล่นกีฬา</p>
-    </div>
-  </section>
-  <!--Card 6-->
+  <Saos
+    animation={"fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"}
+    animation_out={"fade-out 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"}
+    top={250}
+    bottom={250}
+  >
+    <section id="card3" class="card-odd">
+      <section class="reveal">
+        <div class="img-container">
+          <img src="./img/Logo.png" alt="weme" />
+        </div>
+        <div class="content">
+          <h2>Heading One</h2>
+          <h3>Sub-Header</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            sagittis sapien justo, ac mattis quam euismod non. Donec facilisis
+            ultricies sapien nec faucibus. Morbi lacinia blandit ligula et
+            sagittis. Suspendisse a commodo augue, eu tristique lectus. Donec a
+            condimentum dolor. Nullam quis sapien sit amet nisi bibendum
+            accumsan. Sed odio felis, interdum eget justo ac, pellentesque
+            sodales nibh. Cras malesuada felis sed nunc suscipit, et maximus
+            augue molestie. Integer pretium vehicula nisi.
+          </p>
+        </div>
+      </section>
+    </section>
+  </Saos>
 
+  <Saos
+    animation={"fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"}
+    animation_out={"fade-out 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"}
+    top={250}
+    bottom={250}
+  >
+    <section id="card2" class="card-even">
+      <section class="reveal">
+        <div class="content">
+          <h2>Heading One</h2>
+          <h3>Sub-Header</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            sagittis sapien justo, ac mattis quam euismod non. Donec facilisis
+            ultricies sapien nec faucibus. Morbi lacinia blandit ligula et
+            sagittis. Suspendisse a commodo augue, eu tristique lectus. Donec a
+            condimentum dolor. Nullam quis sapien sit amet nisi bibendum
+            accumsan. Sed odio felis, interdum eget justo ac, pellentesque
+            sodales nibh. Cras malesuada felis sed nunc suscipit, et maximus
+            augue molestie. Integer pretium vehicula nisi.
+          </p>
+        </div>
+        <div class="img-container">
+          <img src="./img/Logo.png" alt="weme" />
+        </div>
+      </section>
+    </section>
+  </Saos>
 </main>
 
 <style>
-
-  main {
-    font-size: 1.3rem;
+  img {
+    width: 50%;
+    height: auto;
+    margin-top: 30px;
   }
-  h1 {
-    color: var(--title-color-gray);
+  section {
+    margin: 0 auto;
   }
-
-  p {
-    color: var(--content-color-gray);
-  }
-
-  .container {
-    max-width: 1100px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 2rem;
+  .content {
+    margin: 1rem;
+    padding: 1rem;
+    word-break: break-word;
   }
 
-  .main-header {
-    padding: 2rem;
+  #card1 {
+    background-color: #5e5e5e;
+  }
+
+  #card2 {
+    background-color: #684c4c;
+  }
+  .img-container {
+    text-align: center;
+  }
+
+  .card-odd .reveal, .card-even .reveal {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    word-break: break-word;
-  }
+    align-content: center;
+}
 
-  .main-header h1 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-    line-height: 1.2;
-  }
+.card-even .reveal {
+  flex-direction: column-reverse;
+}
 
-  .main-header h1 span {
-    color: var(--primary-color-orange);
-  }
-
-  .main-header p {
-    font-size: 2rem;
-  }
-
-  .mb-top {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mb-bottom {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  #card {
-    align-items: center;
-    margin-bottom: 2rem;
-    word-break: break-word;
-    background: #f1f1f1;
-    border-radius: 20px;
-  }
-
-  #card h3 {
-    margin-bottom: 2rem;
-  }
-
-  #card img {
-    max-inline-size: 90%;
-    block-size: auto;
-    aspect-ratio: 1/1.5;
-    object-fit: cover;
-    object-position: top center;
-    border-radius: 20px;
-  }
-
-  #card > div {
-    padding: 2rem;
-  }
-
-  #card:nth-child(even) img {
-    order: 2;
-  }
-
+  
   @media only screen and (min-width: 767px) {
-    #card {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 2rem;
-      align-items: center;
-      justify-items: center;
-      word-break: break-word;
+    section {
+    min-height: 700px;
+  }
+
+  .card-odd .reveal {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
+  }
+
+  .card-even .reveal {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-auto-flow: dense;
+    align-items: center;
+  }
+  }
+
+  @keyframes -global-fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes -global-fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 </style>
