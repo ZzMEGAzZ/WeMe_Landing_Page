@@ -34,7 +34,7 @@
 	const analytics = getAnalytics(app);
 
 	// Set mode
-	$mode = "details";
+	$mode = "home";
 </script>
 
 <main>
