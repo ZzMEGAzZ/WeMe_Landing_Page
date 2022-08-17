@@ -208,7 +208,7 @@
     }
     .button label.active {
         width: 35px;
-    }
+    }โ
     #one:checked ~ .button .one {
         width: 35px;
     }

@@ -17,8 +17,7 @@
     <div class="footer-left">
         <img class="weme" src="img/Logo.png" alt="" />
         <p class="description">
-            WeMe แอปพลิเคชันหาเพื่อนเล่นกีฬา
-            พร้อมโปรโมชันสุดพิเศษสำหรับคุณ
+            WeMe แอปพลิเคชันหาเพื่อนเล่นกีฬา พร้อมโปรโมชันสุดพิเศษสำหรับคุณ
         </p>
         <p>By Deval &copy; 2022</p>
     </div>

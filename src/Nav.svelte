@@ -29,7 +29,8 @@
       document.getElementById("subscribe-btn").style.border = "none";
     }
     if (page == "donate" || page == "subscribe") {
-      document.getElementById("main").style.backgroundColor = "var(--title-color-gray)";
+      document.getElementById("main").style.backgroundColor =
+        "var(--title-color-gray)";
     } else {
       document.getElementById("main").style.backgroundColor = "transparent";
     }
@@ -39,7 +40,6 @@
     $mode = page;
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    
   }
 </script>
 
@@ -91,7 +91,6 @@
 </main>
 
 <style>
-
   main {
     background-color: transparent;
   }
@@ -256,7 +255,7 @@
     .nav-container {
       height: 90px;
     }
-    
+
     .navbar .menu-items {
       padding: 0px;
       background-color: var(--primary-color-blue);
