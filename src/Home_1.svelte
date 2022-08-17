@@ -1,40 +1,49 @@
 <script>
-    import { mode } from "./Stores.js";  
-    
-    function setTo(page) {
-        $mode = page;
-        if (page == "home") {
-      document.getElementById("home-btn").style.border = "white solid 4px";
-    } else {
-      document.getElementById("home-btn").style.border = "none";
-    }
-    if (page == "details") {
-      document.getElementById("details-btn").style.border = "white solid 4px";
-    } else {
-      document.getElementById("details-btn").style.border = "none";
-    }
-    if (page == "contact") {
-      document.getElementById("contact-btn").style.border = "white solid 4px";
-    } else {
-      document.getElementById("contact-btn").style.border = "none";
-    }
-    if (page == "donate") {
-      document.getElementById("donate-btn").style.border = "white solid 4px";
-    } else {
-      document.getElementById("donate-btn").style.border = "none";
-    }
-    if (page == "subscribe") {
-      document.getElementById("subscribe-btn").style.border = "white solid 4px";
-    } else {
-      document.getElementById("subscribe-btn").style.border = "none";
-    }
-    if (page == "donate" || page == "subscribe") {
-      document.getElementById("main").style.backgroundColor = "var(--title-color-gray)";
-    } else {
-      document.getElementById("main").style.backgroundColor = "transparent";
-    }
-    }
+    import { mode } from "./Stores.js";
 
+    function setTo(page) {
+        if (page == "home") {
+            document.getElementById("home-btn").style.border =
+                "white solid 4px";
+        } else {
+            document.getElementById("home-btn").style.border = "none";
+        }
+        if (page == "details") {
+            document.getElementById("details-btn").style.border =
+                "white solid 4px";
+        } else {
+            document.getElementById("details-btn").style.border = "none";
+        }
+        if (page == "contact") {
+            document.getElementById("contact-btn").style.border =
+                "white solid 4px";
+        } else {
+            document.getElementById("contact-btn").style.border = "none";
+        }
+        if (page == "donate") {
+            document.getElementById("donate-btn").style.border =
+                "white solid 4px";
+        } else {
+            document.getElementById("donate-btn").style.border = "none";
+        }
+        if (page == "subscribe") {
+            document.getElementById("subscribe-btn").style.border =
+                "white solid 4px";
+        } else {
+            document.getElementById("subscribe-btn").style.border = "none";
+        }
+        if (page == "donate" || page == "subscribe") {
+            document.getElementById("main").style.backgroundColor =
+                "var(--title-color-gray)";
+        } else {
+            document.getElementById("main").style.backgroundColor =
+                "transparent";
+        }
+
+        $mode = page;
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
 </script>
 
 <div class="container">
@@ -46,12 +55,17 @@
             </div>
             <div class="par">
                 <p>
-                    WeMe แอปพลิเคชันหาเพื่อนทำกิจกรรม หาเพื่อนเล่นกีฬา พร้อมโปรโมชันสุดพิเศษสำหรับคุณ
+                    WeMe แอปพลิเคชันหาเพื่อนเล่นกีฬา
+                    พร้อมโปรโมชันสุดพิเศษสำหรับคุณ
                 </p>
             </div>
             <div class="btns">
-                <button class="btns_more" on:click={() => setTo("details")}> See more </button>
-                <button class="btns_more" on:click={() => setTo("subscribe")}> Subscribe </button>
+                <button class="btns_more" on:click={() => setTo("details")}>
+                    See more
+                </button>
+                <button class="btns_more" on:click={() => setTo("subscribe")}>
+                    Subscribe
+                </button>
             </div>
         </div>
     </div>
@@ -87,11 +101,11 @@
     }
 
     #we {
-        color: var(--primary-color-blue)
+        color: var(--primary-color-blue);
     }
 
     #me {
-        color: var(--primary-color-orange)
+        color: var(--primary-color-orange);
     }
 
     .title {
@@ -167,7 +181,6 @@
     }
 
     @media only screen and (min-width: 767px) {
-
         h1 {
             font-size: 5em;
         }

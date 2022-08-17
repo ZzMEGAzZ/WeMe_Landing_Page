@@ -2,20 +2,19 @@
   import { Excutive } from "./Stores.js";
 
   // Const Members
-  const M1 = $Excutive.CEO
-  const M2 = $Excutive.CMO
-  const M3 = $Excutive.CCO
-  const M4 = $Excutive.CTO
-  const M5 = $Excutive.DEV_1
-  const M6 = $Excutive.DEV_2
-  const M7 = $Excutive.DEV_3
+  const M1 = $Excutive.CEO;
+  const M2 = $Excutive.CMO;
+  const M3 = $Excutive.CCO;
+  const M4 = $Excutive.CTO;
+  const M5 = $Excutive.DEV_1;
+  const M6 = $Excutive.DEV_2;
+  const M7 = $Excutive.DEV_3;
 
   AOS.init({
     offset: 400, // offset (in px) from the original trigger point
     delay: 0, // values from 0 to 3000, with step 50ms
     duration: 1000, // values from 0 to 3000, with step 50ms
   });
-
 </script>
 
 <header class="main-header">
@@ -138,14 +137,15 @@
     </div>
   </section>
   <!--Member 7-->
-
 </main>
 
 <style>
   main {
     font-size: 1.3rem;
   }
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     color: var(--title-color-gray);
   }
 

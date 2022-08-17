@@ -262,36 +262,36 @@
     text-align: center;
   }
 
-  .card-odd .reveal, .card-even .reveal {
+  .card-odd .reveal,
+  .card-even .reveal {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: center;
-}
-
-.card-even .reveal {
-  flex-direction: column-reverse;
-}
-
-  
-  @media only screen and (min-width: 767px) {
-    section {
-    min-height: 700px;
-  }
-
-  .card-odd .reveal {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    align-items: center;
   }
 
   .card-even .reveal {
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
-    grid-auto-flow: dense;
-    align-items: center;
+    flex-direction: column-reverse;
   }
+
+  @media only screen and (min-width: 767px) {
+    section {
+      min-height: 700px;
+    }
+
+    .card-odd .reveal {
+      display: grid;
+      grid-template-columns: 0.5fr 1fr;
+      align-items: center;
+    }
+
+    .card-even .reveal {
+      display: grid;
+      grid-template-columns: 1fr 0.5fr;
+      grid-auto-flow: dense;
+      align-items: center;
+    }
   }
 
   @keyframes -global-fade-in {

@@ -1,6 +1,6 @@
 <main>
     <h1>สนับสนุนเรา</h1>
-    <img src="img/QR-Payment.png" alt="QR-Payment">
+    <img src="img/QR-Payment.png" alt="QR-Payment" />
 </main>
 
 <style>

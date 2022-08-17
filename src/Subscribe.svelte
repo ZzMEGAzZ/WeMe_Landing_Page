@@ -1,11 +1,10 @@
 <script>
-
     function validate() {
         var name_v = document.forms["my-Form"]["name"].value;
         var last_v = document.forms["my-Form"]["lastname"].value;
         var email_v = document.forms["my-Form"]["email"].value;
 
-        if(name_v =="" || last_v ==""|| email_v==""){
+        if (name_v == "" || last_v == "" || email_v == "") {
             alert("please fill all information");
             return false;
         }
@@ -13,8 +12,7 @@
     }
 
     function submitForm() {
-
-        if(validate()){          
+        if (validate()) {
             const form = document.getElementById("my-Form");
             form.addEventListener("submit", function (e) {
                 console.log("sending data in progress ...");
@@ -29,14 +27,15 @@
                 }).then(() => {
                     console.log("sending data successfully");
                     document.getElementById("send-data").style.display = "none";
-                    document.getElementById("send-data-success").style.display = "block";
+                    document.getElementById("send-data-success").style.display =
+                        "block";
                     alert("สมัครติดตามข่าวสารเรียบร้อยแล้ว");
                     //reset form
                     document.getElementById("my-Form").reset();
+                });
             });
-        });
-        };
-    };
+        }
+    }
 </script>
 
 <!--Script คำสั่ง ดึงข้อมูลไป Google Sheet = https://script.google.com/macros/s/AKfycbxlZ5IZBp8DgChaEf0wnBr14OHaF6DylRJEeAkW5a8fzy5XcqvGIUWlnTvRnS_cuHCbag/exec -->
@@ -44,7 +43,9 @@
 <main id="body">
     <h1 id="caution">ลงทะเบียนติดตาม ข่าวสารตอนนี้!</h1>
     <p>
-        เพื่อพัฒนาแอปพลิเคชันต่อไป ข้อมูลของคุณจะถูกจัดเก็บเพื่อยืนยันกับแหล่งทุน ว่ามีผู้คนสนใจจริงโดยจะไม่ถูกเปิดเผยสู่สาธารณะโดยเด็ดขาด
+        เพื่อพัฒนาแอปพลิเคชันต่อไป
+        ข้อมูลของคุณจะถูกจัดเก็บเพื่อยืนยันกับแหล่งทุน
+        ว่ามีผู้คนสนใจจริงโดยจะไม่ถูกเปิดเผยสู่สาธารณะโดยเด็ดขาด
     </p>
     <p id="head">สมัครติดตามข่าวสาร</p>
     <div id="container">
@@ -86,7 +87,6 @@
                     placeholder="*อีเมล"
                     name="email"
                     required
-                    
                 />
             </div>
             <div id="etc-box" class="form-group">
@@ -97,7 +97,9 @@
                     placeholder="สิ่งที่อยากจะบอกเรา"
                 />
             </div>
-            <button type="submit" value="Submit" on:click={() => submitForm()}>สมัครรับข้อมูล</button>
+            <button type="submit" value="Submit" on:click={() => submitForm()}
+                >สมัครรับข้อมูล</button
+            >
         </form>
 
         <p id="send-data">sending data in progress ...</p>
@@ -169,7 +171,8 @@
         font-family: "Mitr", sans-serif;
         margin-top: 20px;
     }
-    #send-data, #send-data-success {
+    #send-data,
+    #send-data-success {
         text-align: center;
         font-family: "Mitr", sans-serif;
         font-size: 20px;

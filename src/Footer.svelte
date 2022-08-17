@@ -1,14 +1,25 @@
 <footer class="footer-distributed">
     <div class="footer-right">
-        <a href={"https://www.instagram.com/bydeval/"} target="_blank"><img src="img/IG-Logo.png" alt=""/></a>
-        <a href={"https://www.instagram.com/bydeval/"} target="_blank"><img src="img/IG-Logo.png" alt=""/></a>
-        <a href={"https://www.instagram.com/bydeval/"} target="_blank"><img src="img/IG-Logo.png" alt=""/></a>
-        <a href={"https://www.instagram.com/bydeval/"} target="_blank"><img src="img/IG-Logo.png" alt=""/></a>
+        <a href={"https://www.instagram.com/bydeval/"} target="_blank"
+            ><img src="img/IG-Logo.png" alt="" /></a
+        >
+        <a href={"https://www.instagram.com/bydeval/"} target="_blank"
+            ><img src="img/IG-Logo.png" alt="" /></a
+        >
+        <a href={"https://www.instagram.com/bydeval/"} target="_blank"
+            ><img src="img/IG-Logo.png" alt="" /></a
+        >
+        <a href={"https://www.instagram.com/bydeval/"} target="_blank"
+            ><img src="img/IG-Logo.png" alt="" /></a
+        >
     </div>
 
     <div class="footer-left">
-        <img class="weme" src="img/Logo.png" alt="">
-        <p class="description">WeMe แอปพลิเคชันหาเพื่อนทำกิจกรรม หาเพื่อนเล่นกีฬา พร้อมโปรโมชันสุดพิเศษสำหรับคุณ</p>
+        <img class="weme" src="img/Logo.png" alt="" />
+        <p class="description">
+            WeMe แอปพลิเคชันหาเพื่อนเล่นกีฬา
+            พร้อมโปรโมชันสุดพิเศษสำหรับคุณ
+        </p>
         <p>By Deval &copy; 2022</p>
     </div>
 </footer>

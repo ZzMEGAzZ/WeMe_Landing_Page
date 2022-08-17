@@ -5,13 +5,12 @@
             <p>Instragram</p>
             <img src="img/IG-QR-Code.png" alt="" />
         </section>
-    
+
         <section id="FB" class="social">
             <p>Facebook</p>
             <img src="img/IG-QR-Code.png" alt="" />
         </section>
     </div>
-    
 </main>
 
 <style>
